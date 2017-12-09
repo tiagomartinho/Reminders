@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2442953A1FDC40D300CAD00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244295391FDC40D300CAD00D /* AppDelegate.swift */; };
-		2442953C1FDC40D300CAD00D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442953B1FDC40D300CAD00D /* ViewController.swift */; };
-		2442953F1FDC40D300CAD00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442953D1FDC40D300CAD00D /* Main.storyboard */; };
 		244295411FDC40D300CAD00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244295401FDC40D300CAD00D /* Assets.xcassets */; };
 		244295441FDC40D300CAD00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244295421FDC40D300CAD00D /* LaunchScreen.storyboard */; };
-		2442954F1FDC40D300CAD00D /* RemindersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442954E1FDC40D300CAD00D /* RemindersTests.swift */; };
-		2442955A1FDC40D300CAD00D /* RemindersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244295591FDC40D300CAD00D /* RemindersUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,17 +30,12 @@
 
 /* Begin PBXFileReference section */
 		244295361FDC40D300CAD00D /* Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		244295391FDC40D300CAD00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2442953B1FDC40D300CAD00D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2442953E1FDC40D300CAD00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		244295401FDC40D300CAD00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244295431FDC40D300CAD00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		244295451FDC40D300CAD00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2442954A1FDC40D300CAD00D /* RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2442954E1FDC40D300CAD00D /* RemindersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTests.swift; sourceTree = "<group>"; };
 		244295501FDC40D300CAD00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244295551FDC40D300CAD00D /* RemindersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		244295591FDC40D300CAD00D /* RemindersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersUITests.swift; sourceTree = "<group>"; };
 		2442955B1FDC40D300CAD00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,9 +87,6 @@
 		244295381FDC40D300CAD00D /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
-				244295391FDC40D300CAD00D /* AppDelegate.swift */,
-				2442953B1FDC40D300CAD00D /* ViewController.swift */,
-				2442953D1FDC40D300CAD00D /* Main.storyboard */,
 				244295401FDC40D300CAD00D /* Assets.xcassets */,
 				244295421FDC40D300CAD00D /* LaunchScreen.storyboard */,
 				244295451FDC40D300CAD00D /* Info.plist */,
@@ -110,7 +97,6 @@
 		2442954D1FDC40D300CAD00D /* RemindersTests */ = {
 			isa = PBXGroup;
 			children = (
-				2442954E1FDC40D300CAD00D /* RemindersTests.swift */,
 				244295501FDC40D300CAD00D /* Info.plist */,
 			);
 			path = RemindersTests;
@@ -119,7 +105,6 @@
 		244295581FDC40D300CAD00D /* RemindersUITests */ = {
 			isa = PBXGroup;
 			children = (
-				244295591FDC40D300CAD00D /* RemindersUITests.swift */,
 				2442955B1FDC40D300CAD00D /* Info.plist */,
 			);
 			path = RemindersUITests;
@@ -234,7 +219,6 @@
 			files = (
 				244295441FDC40D300CAD00D /* LaunchScreen.storyboard in Resources */,
 				244295411FDC40D300CAD00D /* Assets.xcassets in Resources */,
-				2442953F1FDC40D300CAD00D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2442953C1FDC40D300CAD00D /* ViewController.swift in Sources */,
-				2442953A1FDC40D300CAD00D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2442954F1FDC40D300CAD00D /* RemindersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2442955A1FDC40D300CAD00D /* RemindersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +276,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2442953D1FDC40D300CAD00D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2442953E1FDC40D300CAD00D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		244295421FDC40D300CAD00D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,7 +427,6 @@
 		244295621FDC40D300CAD00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
@@ -472,7 +443,6 @@
 		244295631FDC40D300CAD00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
@@ -489,7 +459,6 @@
 		244295651FDC40D300CAD00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RemindersUITests/Info.plist;
@@ -505,7 +474,6 @@
 		244295661FDC40D300CAD00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RemindersUITests/Info.plist;
