@@ -87,9 +87,7 @@
 		244295381FDC40D300CAD00D /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
-				244295401FDC40D300CAD00D /* Assets.xcassets */,
-				244295421FDC40D300CAD00D /* LaunchScreen.storyboard */,
-				244295451FDC40D300CAD00D /* Info.plist */,
+				245F7BF91FDC42F000F319E1 /* Supporting Files */,
 			);
 			path = Reminders;
 			sourceTree = "<group>";
@@ -97,7 +95,7 @@
 		2442954D1FDC40D300CAD00D /* RemindersTests */ = {
 			isa = PBXGroup;
 			children = (
-				244295501FDC40D300CAD00D /* Info.plist */,
+				245F7BFA1FDC42FA00F319E1 /* Supporting Files */,
 			);
 			path = RemindersTests;
 			sourceTree = "<group>";
@@ -105,9 +103,35 @@
 		244295581FDC40D300CAD00D /* RemindersUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2442955B1FDC40D300CAD00D /* Info.plist */,
+				245F7BFB1FDC42FF00F319E1 /* Supporting Files */,
 			);
 			path = RemindersUITests;
+			sourceTree = "<group>";
+		};
+		245F7BF91FDC42F000F319E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				244295401FDC40D300CAD00D /* Assets.xcassets */,
+				244295421FDC40D300CAD00D /* LaunchScreen.storyboard */,
+				244295451FDC40D300CAD00D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		245F7BFA1FDC42FA00F319E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				244295501FDC40D300CAD00D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		245F7BFB1FDC42FF00F319E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2442955B1FDC40D300CAD00D /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +206,7 @@
 					};
 					244295491FDC40D300CAD00D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 244295351FDC40D300CAD00D;
 					};
@@ -400,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = Reminders/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Reminders/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Reminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = Reminders/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Reminders/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Reminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,12 +453,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = RemindersTests/Info.plist;
+				INFOPLIST_FILE = "RemindersTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reminders.app/Reminders";
@@ -444,9 +471,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = RemindersTests/Info.plist;
+				INFOPLIST_FILE = "RemindersTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,7 +489,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = RemindersUITests/Info.plist;
+				INFOPLIST_FILE = "RemindersUITests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -476,7 +504,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = RemindersUITests/Info.plist;
+				INFOPLIST_FILE = "RemindersUITests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
