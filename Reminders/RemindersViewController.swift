@@ -1,13 +1,19 @@
 import UIKit
+import RemindersCore
 
 class RemindersViewController: UIViewController {
 
+    private var presenter: RemindersPresenter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setView()
+        presenter = RemindersPresenter(view: self)
+        presenter.loadReminders()
     }
+}
 
-    private func setView() {
+extension RemindersViewController: RemindersView {
+    func showNoReminders() {
         let label = UILabel()
         label.text = "You have no reminders"
         label.textAlignment = .center

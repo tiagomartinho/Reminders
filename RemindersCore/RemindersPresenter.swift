@@ -1,12 +1,12 @@
-class RemindersPresenter {
+public class RemindersPresenter {
 
     weak var view: RemindersView?
 
-    init(view: RemindersView?) {
+    public init(view: RemindersView?) {
         self.view = view
     }
 
-    func loadReminders() {
+    public func loadReminders() {
         view?.showNoReminders()
     }
 }

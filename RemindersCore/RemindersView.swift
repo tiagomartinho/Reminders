@@ -1,3 +1,3 @@
-protocol RemindersView: class {
+public protocol RemindersView: class {
     func showNoReminders()
 }
