@@ -9,6 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RemindersCore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>244295351FDC40D300CAD00D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>244295491FDC40D300CAD00D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>244295541FDC40D300CAD00D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>245F7C121FDC4F7C00F319E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

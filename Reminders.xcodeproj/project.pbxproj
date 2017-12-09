@@ -12,6 +12,13 @@
 		245F7BFF1FDC45FD00F319E1 /* RemindersEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */; };
 		245F7C011FDC46AC00F319E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C001FDC46AC00F319E1 /* AppDelegate.swift */; };
 		245F7C031FDC46D500F319E1 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C021FDC46D500F319E1 /* RemindersViewController.swift */; };
+		245F7C141FDC4F7C00F319E1 /* RemindersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245F7C0B1FDC4F7C00F319E1 /* RemindersCore.framework */; };
+		245F7C1B1FDC4F7C00F319E1 /* RemindersPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C1A1FDC4F7C00F319E1 /* RemindersPresenterTest.swift */; };
+		245F7C201FDC4F7C00F319E1 /* RemindersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245F7C0B1FDC4F7C00F319E1 /* RemindersCore.framework */; };
+		245F7C211FDC4F7C00F319E1 /* RemindersCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 245F7C0B1FDC4F7C00F319E1 /* RemindersCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		245F7C2C1FDC4FFA00F319E1 /* RemindersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C2B1FDC4FFA00F319E1 /* RemindersPresenter.swift */; };
+		245F7C2E1FDC500300F319E1 /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C2D1FDC500300F319E1 /* RemindersView.swift */; };
+		245F7C301FDC502600F319E1 /* SpyRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C2F1FDC502600F319E1 /* SpyRemindersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +36,42 @@
 			remoteGlobalIDString = 244295351FDC40D300CAD00D;
 			remoteInfo = Reminders;
 		};
+		245F7C151FDC4F7C00F319E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442952E1FDC40D300CAD00D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 245F7C0A1FDC4F7C00F319E1;
+			remoteInfo = RemindersCore;
+		};
+		245F7C171FDC4F7C00F319E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442952E1FDC40D300CAD00D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244295351FDC40D300CAD00D;
+			remoteInfo = Reminders;
+		};
+		245F7C1E1FDC4F7C00F319E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442952E1FDC40D300CAD00D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 245F7C0A1FDC4F7C00F319E1;
+			remoteInfo = RemindersCore;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		245F7C251FDC4F7C00F319E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				245F7C211FDC4F7C00F319E1 /* RemindersCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		244295361FDC40D300CAD00D /* Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +85,14 @@
 		245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersEndToEndTest.swift; sourceTree = "<group>"; };
 		245F7C001FDC46AC00F319E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		245F7C021FDC46D500F319E1 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		245F7C0B1FDC4F7C00F319E1 /* RemindersCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemindersCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		245F7C0E1FDC4F7C00F319E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245F7C131FDC4F7C00F319E1 /* RemindersCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		245F7C1A1FDC4F7C00F319E1 /* RemindersPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersPresenterTest.swift; sourceTree = "<group>"; };
+		245F7C1C1FDC4F7C00F319E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245F7C2B1FDC4FFA00F319E1 /* RemindersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersPresenter.swift; sourceTree = "<group>"; };
+		245F7C2D1FDC500300F319E1 /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
+		245F7C2F1FDC502600F319E1 /* SpyRemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyRemindersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245F7C201FDC4F7C00F319E1 /* RemindersCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +118,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		245F7C071FDC4F7C00F319E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245F7C101FDC4F7C00F319E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245F7C141FDC4F7C00F319E1 /* RemindersCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +142,8 @@
 				244295381FDC40D300CAD00D /* Reminders */,
 				2442954D1FDC40D300CAD00D /* RemindersTests */,
 				244295581FDC40D300CAD00D /* RemindersUITests */,
+				245F7C0C1FDC4F7C00F319E1 /* RemindersCore */,
+				245F7C191FDC4F7C00F319E1 /* RemindersCoreTests */,
 				244295371FDC40D300CAD00D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +154,8 @@
 				244295361FDC40D300CAD00D /* Reminders.app */,
 				2442954A1FDC40D300CAD00D /* RemindersTests.xctest */,
 				244295551FDC40D300CAD00D /* RemindersUITests.xctest */,
+				245F7C0B1FDC4F7C00F319E1 /* RemindersCore.framework */,
+				245F7C131FDC4F7C00F319E1 /* RemindersCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +213,61 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		245F7C0C1FDC4F7C00F319E1 /* RemindersCore */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C2B1FDC4FFA00F319E1 /* RemindersPresenter.swift */,
+				245F7C2D1FDC500300F319E1 /* RemindersView.swift */,
+				245F7C2A1FDC4FC400F319E1 /* Supporting Files */,
+			);
+			path = RemindersCore;
+			sourceTree = "<group>";
+		};
+		245F7C191FDC4F7C00F319E1 /* RemindersCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C1A1FDC4F7C00F319E1 /* RemindersPresenterTest.swift */,
+				245F7C311FDC504900F319E1 /* Spies */,
+				245F7C291FDC4FC000F319E1 /* Supporting Files */,
+			);
+			path = RemindersCoreTests;
+			sourceTree = "<group>";
+		};
+		245F7C291FDC4FC000F319E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C1C1FDC4F7C00F319E1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		245F7C2A1FDC4FC400F319E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C0E1FDC4F7C00F319E1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		245F7C311FDC504900F319E1 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C2F1FDC502600F319E1 /* SpyRemindersView.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		245F7C081FDC4F7C00F319E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		244295351FDC40D300CAD00D /* Reminders */ = {
@@ -153,10 +277,12 @@
 				244295321FDC40D300CAD00D /* Sources */,
 				244295331FDC40D300CAD00D /* Frameworks */,
 				244295341FDC40D300CAD00D /* Resources */,
+				245F7C251FDC4F7C00F319E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				245F7C1F1FDC4F7C00F319E1 /* PBXTargetDependency */,
 			);
 			name = Reminders;
 			productName = Reminders;
@@ -199,6 +325,43 @@
 			productReference = 244295551FDC40D300CAD00D /* RemindersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		245F7C0A1FDC4F7C00F319E1 /* RemindersCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245F7C221FDC4F7C00F319E1 /* Build configuration list for PBXNativeTarget "RemindersCore" */;
+			buildPhases = (
+				245F7C061FDC4F7C00F319E1 /* Sources */,
+				245F7C071FDC4F7C00F319E1 /* Frameworks */,
+				245F7C081FDC4F7C00F319E1 /* Headers */,
+				245F7C091FDC4F7C00F319E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemindersCore;
+			productName = RemindersCore;
+			productReference = 245F7C0B1FDC4F7C00F319E1 /* RemindersCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		245F7C121FDC4F7C00F319E1 /* RemindersCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245F7C261FDC4F7C00F319E1 /* Build configuration list for PBXNativeTarget "RemindersCoreTests" */;
+			buildPhases = (
+				245F7C0F1FDC4F7C00F319E1 /* Sources */,
+				245F7C101FDC4F7C00F319E1 /* Frameworks */,
+				245F7C111FDC4F7C00F319E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				245F7C161FDC4F7C00F319E1 /* PBXTargetDependency */,
+				245F7C181FDC4F7C00F319E1 /* PBXTargetDependency */,
+			);
+			name = RemindersCoreTests;
+			productName = RemindersCoreTests;
+			productReference = 245F7C131FDC4F7C00F319E1 /* RemindersCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +389,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 244295351FDC40D300CAD00D;
 					};
+					245F7C0A1FDC4F7C00F319E1 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					245F7C121FDC4F7C00F319E1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 244295351FDC40D300CAD00D;
+					};
 				};
 			};
 			buildConfigurationList = 244295311FDC40D300CAD00D /* Build configuration list for PBXProject "Reminders" */;
@@ -244,6 +417,8 @@
 				244295351FDC40D300CAD00D /* Reminders */,
 				244295491FDC40D300CAD00D /* RemindersTests */,
 				244295541FDC40D300CAD00D /* RemindersUITests */,
+				245F7C0A1FDC4F7C00F319E1 /* RemindersCore */,
+				245F7C121FDC4F7C00F319E1 /* RemindersCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +441,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		244295531FDC40D300CAD00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245F7C091FDC4F7C00F319E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245F7C111FDC4F7C00F319E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,6 +488,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		245F7C061FDC4F7C00F319E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245F7C2E1FDC500300F319E1 /* RemindersView.swift in Sources */,
+				245F7C2C1FDC4FFA00F319E1 /* RemindersPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245F7C0F1FDC4F7C00F319E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245F7C1B1FDC4F7C00F319E1 /* RemindersPresenterTest.swift in Sources */,
+				245F7C301FDC502600F319E1 /* SpyRemindersView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -311,6 +518,21 @@
 			isa = PBXTargetDependency;
 			target = 244295351FDC40D300CAD00D /* Reminders */;
 			targetProxy = 244295561FDC40D300CAD00D /* PBXContainerItemProxy */;
+		};
+		245F7C161FDC4F7C00F319E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 245F7C0A1FDC4F7C00F319E1 /* RemindersCore */;
+			targetProxy = 245F7C151FDC4F7C00F319E1 /* PBXContainerItemProxy */;
+		};
+		245F7C181FDC4F7C00F319E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244295351FDC40D300CAD00D /* Reminders */;
+			targetProxy = 245F7C171FDC4F7C00F319E1 /* PBXContainerItemProxy */;
+		};
+		245F7C1F1FDC4F7C00F319E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 245F7C0A1FDC4F7C00F319E1 /* RemindersCore */;
+			targetProxy = 245F7C1E1FDC4F7C00F319E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -436,6 +658,7 @@
 		2442955F1FDC40D300CAD00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +676,7 @@
 		244295601FDC40D300CAD00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +762,89 @@
 			};
 			name = Release;
 		};
+		245F7C231FDC4F7C00F319E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/RemindersCore/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		245F7C241FDC4F7C00F319E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/RemindersCore/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		245F7C271FDC4F7C00F319E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = "RemindersCoreTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reminders.app/Reminders";
+			};
+			name = Debug;
+		};
+		245F7C281FDC4F7C00F319E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = "RemindersCoreTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.RemindersCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reminders.app/Reminders";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,6 +880,24 @@
 			buildConfigurations = (
 				244295651FDC40D300CAD00D /* Debug */,
 				244295661FDC40D300CAD00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245F7C221FDC4F7C00F319E1 /* Build configuration list for PBXNativeTarget "RemindersCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245F7C231FDC4F7C00F319E1 /* Debug */,
+				245F7C241FDC4F7C00F319E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245F7C261FDC4F7C00F319E1 /* Build configuration list for PBXNativeTarget "RemindersCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245F7C271FDC4F7C00F319E1 /* Debug */,
+				245F7C281FDC4F7C00F319E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
