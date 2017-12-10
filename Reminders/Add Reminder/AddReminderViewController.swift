@@ -17,8 +17,16 @@ class AddReminderViewController: UIViewController {
         view.backgroundColor = .white
         title = "Add Reminder"
         navigationController?.navigationBar.prefersLargeTitles = true
+        setRightBarButton()
+        setLeftBarButton()
+    }
+
+    private func setRightBarButton() {
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveReminder))
         navigationItem.setRightBarButtonItems([saveButton], animated: false)
+    }
+
+    private func setLeftBarButton() {
         let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
         navigationItem.setLeftBarButtonItems([cancelButton], animated: false)
     }
