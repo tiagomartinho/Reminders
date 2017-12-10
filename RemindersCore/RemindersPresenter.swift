@@ -9,4 +9,8 @@ public class RemindersPresenter {
     public func loadReminders() {
         view?.showNoReminders()
     }
+
+    public func addNewReminder() {
+        view?.showAddReminder()
+    }
 }

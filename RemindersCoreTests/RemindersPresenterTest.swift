@@ -11,4 +11,13 @@ class RemindersPresenterTest: XCTestCase {
 
         XCTAssert(view.showNoRemindersWasCalled)
     }
+
+    func testShowAddReminders() {
+        let view = SpyRemindersView()
+        let presenter = RemindersPresenter(view: view)
+
+        presenter.addNewReminder()
+
+        XCTAssert(view.showAddReminderWasCalled)
+    }
 }
