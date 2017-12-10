@@ -1,6 +1,6 @@
 # Reminders iOS
 
-An iOS application written in Swift to demonstrates a Clean Architecture in iOS.
+An iOS application written in Swift to demonstrate how to implement a Clean Architecture in iOS.
 
 ## Requirements
 
