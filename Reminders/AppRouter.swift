@@ -17,7 +17,7 @@ class AppRouter: Router {
     private func viewControllerToPresent(view: View) -> UIViewController {
         switch view {
         case .addReminder:
-            return AddReminderViewController()
+            return UINavigationController(rootViewController: AddReminderViewController())
         }
     }
 }
