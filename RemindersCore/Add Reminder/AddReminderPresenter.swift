@@ -14,5 +14,6 @@ public class AddReminderPresenter {
 
     public func save(_ reminder: Reminder) {
         repository?.save(reminder)
+        router?.route(to: .reminders)
     }
 }

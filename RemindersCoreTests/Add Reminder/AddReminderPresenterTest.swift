@@ -3,6 +3,18 @@ import XCTest
 
 class AddReminderPresenterTest: XCTestCase {
 
+    func testSaveReminderToRepository() {
+        let router = SpyRouter()
+        let repository = SpyRemindersRepository()
+        let presenter = AddReminderPresenter(router: router, repository: repository)
+        let reminder = Reminder(title: "Read Clean Architecture")
+
+        presenter.save(reminder)
+
+        XCTAssert(repository.saveWasCalled)
+        XCTAssertEqual(reminder, repository.lastReminder)
+    }
+
     func testRouteToRemindersViewWithCancel() {
         let router = SpyRouter()
         let repository = SpyRemindersRepository()
@@ -14,7 +26,7 @@ class AddReminderPresenterTest: XCTestCase {
         XCTAssertEqual(.reminders, router.lastView)
     }
 
-    func testSaveReminderToRepository() {
+    func testRouteToRemindersViewWithSave() {
         let router = SpyRouter()
         let repository = SpyRemindersRepository()
         let presenter = AddReminderPresenter(router: router, repository: repository)
@@ -22,7 +34,7 @@ class AddReminderPresenterTest: XCTestCase {
 
         presenter.save(reminder)
 
-        XCTAssert(repository.saveWasCalled)
-        XCTAssertEqual(reminder, repository.lastReminder)
+        XCTAssert(router.routeWasCalled)
+        XCTAssertEqual(.reminders, router.lastView)
     }
 }
