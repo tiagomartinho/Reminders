@@ -60,6 +60,7 @@ extension RemindersViewController: RemindersView {
 }
 
 extension RemindersViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return reminders.count
     }
