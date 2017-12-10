@@ -6,10 +6,6 @@ class AppRouter: Router {
     private var controller: UIViewController?
     private var window: UIWindow?
 
-    init(controller: UIViewController) {
-        self.controller = controller
-    }
-
     init(window: UIWindow) {
         self.window = window
     }
