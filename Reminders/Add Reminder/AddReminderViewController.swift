@@ -4,6 +4,7 @@ import RemindersCore
 class AddReminderViewController: UIViewController {
 
     private var router: Router!
+    private var repository: RemindersRepository!
     private var presenter: AddReminderPresenter!
 
     override func viewDidLoad() {
@@ -24,11 +25,12 @@ class AddReminderViewController: UIViewController {
 
     private func initCollaborators() {
         router = AppRouter(controller: self)
-        presenter = AddReminderPresenter(router: router)
+        repository = InMemoryRemindersRepository()
+        presenter = AddReminderPresenter(router: router, repository: repository)
     }
 
     @objc func saveReminder() {
-
+        presenter.save(Reminder(title: ""))
     }
 
     @objc func cancel() {
