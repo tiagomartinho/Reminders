@@ -9,7 +9,7 @@ class RemindersEndToEndTest: XCTestCase {
         continueAfterFailure = false
         app.launch()
     }
-    
+
     func testShowNoReminders() {
         assertNoReminders()
         addReminder()

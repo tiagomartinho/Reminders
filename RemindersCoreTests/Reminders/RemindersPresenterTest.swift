@@ -1,5 +1,5 @@
-import XCTest
 @testable import RemindersCore
+import XCTest
 
 class RemindersPresenterTest: XCTestCase {
 

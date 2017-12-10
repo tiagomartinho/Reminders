@@ -1,5 +1,5 @@
-import UIKit
 import RemindersCore
+import UIKit
 
 class RemindersViewController: UIViewController {
 
@@ -54,8 +54,8 @@ extension RemindersViewController: RemindersView {
 }
 
 extension RemindersViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return reminders.count
     }
 

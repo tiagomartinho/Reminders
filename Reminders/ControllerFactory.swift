@@ -1,5 +1,5 @@
-import UIKit
 import RemindersCore
+import UIKit
 
 class ControllerFactory {
 
