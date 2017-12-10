@@ -146,6 +146,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24089DB91FDDBBC900BC4294 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C021FDC46D500F319E1 /* RemindersViewController.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		24089DBA1FDDBBD400BC4294 /* Add Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				24089DB71FDDB9C200BC4294 /* AddReminderViewController.swift */,
+			);
+			path = "Add Reminder";
+			sourceTree = "<group>";
+		};
+		24089DBB1FDDBBDB00BC4294 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C2B1FDC4FFA00F319E1 /* RemindersPresenter.swift */,
+				245F7C2D1FDC500300F319E1 /* RemindersView.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		24089DBC1FDDBBE400BC4294 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				245F7C1A1FDC4F7C00F319E1 /* RemindersPresenterTest.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
 		2442952D1FDC40D300CAD00D = {
 			isa = PBXGroup;
 			children = (
@@ -175,8 +208,8 @@
 			children = (
 				245F7C001FDC46AC00F319E1 /* AppDelegate.swift */,
 				24089DB51FDDB7D100BC4294 /* AppRouter.swift */,
-				245F7C021FDC46D500F319E1 /* RemindersViewController.swift */,
-				24089DB71FDDB9C200BC4294 /* AddReminderViewController.swift */,
+				24089DB91FDDBBC900BC4294 /* Reminders */,
+				24089DBA1FDDBBD400BC4294 /* Add Reminder */,
 				245F7BF91FDC42F000F319E1 /* Supporting Files */,
 			);
 			path = Reminders;
@@ -230,8 +263,7 @@
 			children = (
 				24089DB11FDDB65F00BC4294 /* Router.swift */,
 				24089DB31FDDB6BC00BC4294 /* View.swift */,
-				245F7C2B1FDC4FFA00F319E1 /* RemindersPresenter.swift */,
-				245F7C2D1FDC500300F319E1 /* RemindersView.swift */,
+				24089DBB1FDDBBDB00BC4294 /* Reminders */,
 				245F7C2A1FDC4FC400F319E1 /* Supporting Files */,
 			);
 			path = RemindersCore;
@@ -240,7 +272,7 @@
 		245F7C191FDC4F7C00F319E1 /* RemindersCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				245F7C1A1FDC4F7C00F319E1 /* RemindersPresenterTest.swift */,
+				24089DBC1FDDBBE400BC4294 /* Reminders */,
 				245F7C311FDC504900F319E1 /* Spies */,
 				245F7C291FDC4FC000F319E1 /* Supporting Files */,
 			);
