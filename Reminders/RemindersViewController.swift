@@ -7,8 +7,20 @@ class RemindersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initView()
         presenter = RemindersPresenter(view: self)
         presenter.loadReminders()
+    }
+
+    private func initView() {
+        title = "Reminders"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let addReminderButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addReminder))
+        navigationItem.setRightBarButtonItems([addReminderButton], animated: false)
+    }
+
+    @objc private func addReminder() {
+
     }
 }
 
