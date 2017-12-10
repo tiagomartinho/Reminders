@@ -48,12 +48,16 @@ class AddReminderViewController: UIViewController {
     }
 
     @objc func saveReminder() {
-        let title = titleTextField.text ?? ""
-        let reminder = Reminder(title: title)
-        presenter.save(reminder)
+        presenter.save()
     }
 
     @objc func cancel() {
         presenter.cancel()
+    }
+}
+
+extension AddReminderViewController: AddReminderView {
+    var reminderTitle: String {
+        return titleTextField.text ?? ""
     }
 }

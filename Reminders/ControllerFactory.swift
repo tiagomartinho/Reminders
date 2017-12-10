@@ -10,7 +10,8 @@ class ControllerFactory {
         switch view {
         case .addReminder:
             let controller = AddReminderViewController()
-            let presenter = AddReminderPresenter(router: router,
+            let presenter = AddReminderPresenter(view: controller,
+                                                 router: router,
                                                  repository: repository)
             controller.presenter = presenter
             rootViewController = controller

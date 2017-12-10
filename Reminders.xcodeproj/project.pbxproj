@@ -31,6 +31,8 @@
 		245F7C2E1FDC500300F319E1 /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C2D1FDC500300F319E1 /* RemindersView.swift */; };
 		245F7C301FDC502600F319E1 /* SpyRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C2F1FDC502600F319E1 /* SpyRemindersView.swift */; };
 		24BCB8F21FDDEFB900BA94C3 /* InMemoryRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DCB1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift */; };
+		24CC3A0A1FDDF3EE00F9D1EF /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CC3A091FDDF3EE00F9D1EF /* AddReminderView.swift */; };
+		24CC3A0C1FDDF41E00F9D1EF /* MockAddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CC3A0B1FDDF41E00F9D1EF /* MockAddReminderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		245F7C2B1FDC4FFA00F319E1 /* RemindersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersPresenter.swift; sourceTree = "<group>"; };
 		245F7C2D1FDC500300F319E1 /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		245F7C2F1FDC502600F319E1 /* SpyRemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyRemindersView.swift; sourceTree = "<group>"; };
+		24CC3A091FDDF3EE00F9D1EF /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
+		24CC3A0B1FDDF41E00F9D1EF /* MockAddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAddReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				24089DBD1FDDBC3E00BC4294 /* AddReminderPresenter.swift */,
+				24CC3A091FDDF3EE00F9D1EF /* AddReminderView.swift */,
 			);
 			path = "Add Reminder";
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				24089DC51FDDC0A200BC4294 /* MockRemindersRepository.swift */,
+				24CC3A0B1FDDF41E00F9D1EF /* MockAddReminderView.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -551,6 +557,7 @@
 			files = (
 				24089DB41FDDB6BC00BC4294 /* View.swift in Sources */,
 				245F7C2E1FDC500300F319E1 /* RemindersView.swift in Sources */,
+				24CC3A0A1FDDF3EE00F9D1EF /* AddReminderView.swift in Sources */,
 				24089DBE1FDDBC3E00BC4294 /* AddReminderPresenter.swift in Sources */,
 				24089DC41FDDC08900BC4294 /* Reminder.swift in Sources */,
 				24089DB21FDDB65F00BC4294 /* Router.swift in Sources */,
@@ -564,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				245F7C1B1FDC4F7C00F319E1 /* RemindersPresenterTest.swift in Sources */,
+				24CC3A0C1FDDF41E00F9D1EF /* MockAddReminderView.swift in Sources */,
 				24089DC61FDDC0A200BC4294 /* MockRemindersRepository.swift in Sources */,
 				24089DB01FDDB63B00BC4294 /* SpyRouter.swift in Sources */,
 				245F7C301FDC502600F319E1 /* SpyRemindersView.swift in Sources */,
