@@ -7,6 +7,8 @@ class AddReminderViewController: UIViewController {
     private var repository: RemindersRepository!
     private var presenter: AddReminderPresenter!
 
+    private var titleTextField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
@@ -19,6 +21,7 @@ class AddReminderViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         setRightBarButton()
         setLeftBarButton()
+        addTitleTextField()
     }
 
     private func setRightBarButton() {
@@ -31,6 +34,18 @@ class AddReminderViewController: UIViewController {
         navigationItem.setLeftBarButtonItems([cancelButton], animated: false)
     }
 
+    private func addTitleTextField() {
+        titleTextField = UITextField()
+        titleTextField.placeholder = "Title"
+        view.addSubview(titleTextField)
+        let margins = view.layoutMarginsGuide
+        titleTextField.translatesAutoresizingMaskIntoConstraints = false
+        titleTextField.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        titleTextField.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        let topAnchor = view.safeAreaLayoutGuide.topAnchor
+        titleTextField.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
+    }
+
     private func initCollaborators() {
         router = AppRouter(controller: self)
         repository = InMemoryRemindersRepository()
@@ -38,7 +53,9 @@ class AddReminderViewController: UIViewController {
     }
 
     @objc func saveReminder() {
-        presenter.save(Reminder(title: ""))
+        let title = titleTextField.text ?? ""
+        let reminder = Reminder(title: title)
+        presenter.save(reminder)
     }
 
     @objc func cancel() {
