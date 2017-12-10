@@ -3,18 +3,28 @@ import UIKit
 
 class AppRouter: Router {
 
-    private let controller: UIViewController
+    private var controller: UIViewController?
+    private var window: UIWindow?
 
     init(controller: UIViewController) {
         self.controller = controller
     }
 
-    func route(to view: View) {
-        controller.present(viewControllerToPresent(view: view),
-                           animated: true, completion: nil)
+    init(window: UIWindow) {
+        self.window = window
     }
 
-    private func viewControllerToPresent(view: View) -> UIViewController {
+    func route(to view: View) {
+        if let controller = controller {
+            controller.present(viewController(from: view),
+                               animated: true, completion: nil)
+        }
+        if let window = window {
+            window.rootViewController = viewController(from: view)
+        }
+    }
+
+    private func viewController(from view: View) -> UIViewController {
         switch view {
         case .addReminder:
             return UINavigationController(rootViewController: AddReminderViewController())
