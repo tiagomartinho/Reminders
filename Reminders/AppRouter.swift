@@ -18,7 +18,7 @@ class AppRouter: Router {
                                 animated: true, completion: nil)
             controller = controllerToPresent
         case .reminders:
-            if let _ = window?.rootViewController {
+            if window?.rootViewController != nil {
                 controller?.dismiss(animated: true, completion: nil)
             } else {
                 window?.rootViewController = ControllerFactory.build(from: view, router: self)
