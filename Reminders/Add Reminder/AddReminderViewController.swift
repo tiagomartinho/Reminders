@@ -38,6 +38,10 @@ class AddReminderViewController: UIViewController {
         titleTextField = UITextField()
         titleTextField.placeholder = "Title"
         view.addSubview(titleTextField)
+        setTitleTextFieldConstraints()
+    }
+
+    private func setTitleTextFieldConstraints() {
         let margins = view.layoutMarginsGuide
         titleTextField.translatesAutoresizingMaskIntoConstraints = false
         titleTextField.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
