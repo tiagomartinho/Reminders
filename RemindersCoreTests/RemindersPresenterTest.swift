@@ -5,19 +5,22 @@ class RemindersPresenterTest: XCTestCase {
 
     func testShowNoRemindersWhenNoRemindersArePresent() {
         let view = SpyRemindersView()
-        let presenter = RemindersPresenter(view: view)
+        let router = SpyRouter()
+        let presenter = RemindersPresenter(view: view, router: router)
 
         presenter.loadReminders()
 
         XCTAssert(view.showNoRemindersWasCalled)
     }
 
-    func testShowAddReminders() {
+    func testRouteToAddReminderView() {
         let view = SpyRemindersView()
-        let presenter = RemindersPresenter(view: view)
+        let router = SpyRouter()
+        let presenter = RemindersPresenter(view: view, router: router)
 
         presenter.addNewReminder()
 
-        XCTAssert(view.showAddReminderWasCalled)
+        XCTAssert(router.routeWasCalled)
+        XCTAssertEqual(.addReminder, router.lastView)
     }
 }

@@ -1,9 +1,11 @@
 public class RemindersPresenter {
 
     weak var view: RemindersView?
+    weak var router: Router?
 
-    public init(view: RemindersView?) {
+    public init(view: RemindersView, router: Router) {
         self.view = view
+        self.router = router
     }
 
     public func loadReminders() {
@@ -11,6 +13,6 @@ public class RemindersPresenter {
     }
 
     public func addNewReminder() {
-        view?.showAddReminder()
+        router?.route(to: .addReminder)
     }
 }

@@ -4,11 +4,12 @@ import RemindersCore
 class RemindersViewController: UIViewController {
 
     private var presenter: RemindersPresenter!
+    private var router: Router!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
-        presenter = RemindersPresenter(view: self)
+        initCollaborators()
         presenter.loadReminders()
     }
 
@@ -19,21 +20,22 @@ class RemindersViewController: UIViewController {
         navigationItem.setRightBarButtonItems([addReminderButton], animated: false)
     }
 
+    private func initCollaborators() {
+        router = AppRouter()
+        presenter = RemindersPresenter(view: self, router: router)
+    }
+
     @objc private func addReminder() {
         presenter.addNewReminder()
     }
 }
 
 extension RemindersViewController: RemindersView {
-
     func showNoReminders() {
         let label = UILabel()
         label.text = "You have no reminders"
         label.textAlignment = .center
         label.backgroundColor = .white
         view = label
-    }
-
-    func showAddReminder() {
     }
 }
