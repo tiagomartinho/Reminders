@@ -20,16 +20,20 @@ class RemindersViewController: UIViewController {
     }
 
     @objc private func addReminder() {
-
+        presenter.addNewReminder()
     }
 }
 
 extension RemindersViewController: RemindersView {
+
     func showNoReminders() {
         let label = UILabel()
         label.text = "You have no reminders"
         label.textAlignment = .center
         label.backgroundColor = .white
         view = label
+    }
+
+    func showAddReminder() {
     }
 }
