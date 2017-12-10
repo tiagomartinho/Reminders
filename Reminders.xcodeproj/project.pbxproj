@@ -11,6 +11,7 @@
 		24089DB21FDDB65F00BC4294 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB11FDDB65F00BC4294 /* Router.swift */; };
 		24089DB41FDDB6BC00BC4294 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB31FDDB6BC00BC4294 /* View.swift */; };
 		24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB51FDDB7D100BC4294 /* AppRouter.swift */; };
+		24089DB81FDDB9C200BC4294 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB71FDDB9C200BC4294 /* AddReminderViewController.swift */; };
 		244295411FDC40D300CAD00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244295401FDC40D300CAD00D /* Assets.xcassets */; };
 		244295441FDC40D300CAD00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244295421FDC40D300CAD00D /* LaunchScreen.storyboard */; };
 		245F7BFF1FDC45FD00F319E1 /* RemindersEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */; };
@@ -82,6 +83,7 @@
 		24089DB11FDDB65F00BC4294 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		24089DB31FDDB6BC00BC4294 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		24089DB51FDDB7D100BC4294 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		24089DB71FDDB9C200BC4294 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 		244295361FDC40D300CAD00D /* Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244295401FDC40D300CAD00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244295431FDC40D300CAD00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				245F7C001FDC46AC00F319E1 /* AppDelegate.swift */,
 				24089DB51FDDB7D100BC4294 /* AppRouter.swift */,
 				245F7C021FDC46D500F319E1 /* RemindersViewController.swift */,
+				24089DB71FDDB9C200BC4294 /* AddReminderViewController.swift */,
 				245F7BF91FDC42F000F319E1 /* Supporting Files */,
 			);
 			path = Reminders;
@@ -480,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24089DB81FDDB9C200BC4294 /* AddReminderViewController.swift in Sources */,
 				24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */,
 				245F7C031FDC46D500F319E1 /* RemindersViewController.swift in Sources */,
 				245F7C011FDC46AC00F319E1 /* AppDelegate.swift in Sources */,

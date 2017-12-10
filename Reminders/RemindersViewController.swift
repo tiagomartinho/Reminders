@@ -21,7 +21,7 @@ class RemindersViewController: UIViewController {
     }
 
     private func initCollaborators() {
-        router = AppRouter()
+        router = AppRouter(controller: self)
         presenter = RemindersPresenter(view: self, router: router)
     }
 
