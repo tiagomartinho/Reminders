@@ -15,7 +15,7 @@
 		24089DBE1FDDBC3E00BC4294 /* AddReminderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DBD1FDDBC3E00BC4294 /* AddReminderPresenter.swift */; };
 		24089DC01FDDBC5100BC4294 /* AddReminderPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DBF1FDDBC5100BC4294 /* AddReminderPresenterTest.swift */; };
 		24089DC41FDDC08900BC4294 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC31FDDC08900BC4294 /* Reminder.swift */; };
-		24089DC61FDDC0A200BC4294 /* SpyRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC51FDDC0A200BC4294 /* SpyRemindersRepository.swift */; };
+		24089DC61FDDC0A200BC4294 /* MockRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC51FDDC0A200BC4294 /* MockRemindersRepository.swift */; };
 		24089DC81FDDC0E800BC4294 /* RemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC71FDDC0E800BC4294 /* RemindersRepository.swift */; };
 		24089DCC1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DCB1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift */; };
 		244295411FDC40D300CAD00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244295401FDC40D300CAD00D /* Assets.xcassets */; };
@@ -93,7 +93,7 @@
 		24089DBD1FDDBC3E00BC4294 /* AddReminderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderPresenter.swift; sourceTree = "<group>"; };
 		24089DBF1FDDBC5100BC4294 /* AddReminderPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderPresenterTest.swift; sourceTree = "<group>"; };
 		24089DC31FDDC08900BC4294 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		24089DC51FDDC0A200BC4294 /* SpyRemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyRemindersRepository.swift; sourceTree = "<group>"; };
+		24089DC51FDDC0A200BC4294 /* MockRemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemindersRepository.swift; sourceTree = "<group>"; };
 		24089DC71FDDC0E800BC4294 /* RemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersRepository.swift; sourceTree = "<group>"; };
 		24089DCB1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryRemindersRepository.swift; sourceTree = "<group>"; };
 		244295361FDC40D300CAD00D /* Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +207,14 @@
 			path = "Add Reminder";
 			sourceTree = "<group>";
 		};
+		24089DCD1FDDCC2400BC4294 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				24089DC51FDDC0A200BC4294 /* MockRemindersRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2442952D1FDC40D300CAD00D = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +314,7 @@
 			children = (
 				24089DBC1FDDBBE400BC4294 /* Reminders */,
 				24089DC11FDDBC5A00BC4294 /* Add Reminder */,
+				24089DCD1FDDCC2400BC4294 /* Mocks */,
 				245F7C311FDC504900F319E1 /* Spies */,
 				245F7C291FDC4FC000F319E1 /* Supporting Files */,
 			);
@@ -333,7 +342,6 @@
 			children = (
 				245F7C2F1FDC502600F319E1 /* SpyRemindersView.swift */,
 				24089DAF1FDDB63B00BC4294 /* SpyRouter.swift */,
-				24089DC51FDDC0A200BC4294 /* SpyRemindersRepository.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -591,7 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				245F7C1B1FDC4F7C00F319E1 /* RemindersPresenterTest.swift in Sources */,
-				24089DC61FDDC0A200BC4294 /* SpyRemindersRepository.swift in Sources */,
+				24089DC61FDDC0A200BC4294 /* MockRemindersRepository.swift in Sources */,
 				24089DB01FDDB63B00BC4294 /* SpyRouter.swift in Sources */,
 				245F7C301FDC502600F319E1 /* SpyRemindersView.swift in Sources */,
 				24089DC01FDDBC5100BC4294 /* AddReminderPresenterTest.swift in Sources */,

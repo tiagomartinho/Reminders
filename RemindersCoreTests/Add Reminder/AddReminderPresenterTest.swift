@@ -5,7 +5,7 @@ class AddReminderPresenterTest: XCTestCase {
 
     func testSaveReminderToRepository() {
         let router = SpyRouter()
-        let repository = SpyRemindersRepository()
+        let repository = MockRemindersRepository()
         let presenter = AddReminderPresenter(router: router, repository: repository)
         let reminder = Reminder(title: "Read Clean Architecture")
 
@@ -17,7 +17,7 @@ class AddReminderPresenterTest: XCTestCase {
 
     func testRouteToRemindersViewWithCancel() {
         let router = SpyRouter()
-        let repository = SpyRemindersRepository()
+        let repository = MockRemindersRepository()
         let presenter = AddReminderPresenter(router: router, repository: repository)
 
         presenter.cancel()
@@ -28,7 +28,7 @@ class AddReminderPresenterTest: XCTestCase {
 
     func testRouteToRemindersViewWithSave() {
         let router = SpyRouter()
-        let repository = SpyRemindersRepository()
+        let repository = MockRemindersRepository()
         let presenter = AddReminderPresenter(router: router, repository: repository)
         let reminder = Reminder(title: "Read Clean Architecture")
 

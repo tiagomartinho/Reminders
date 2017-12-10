@@ -34,11 +34,15 @@ class RemindersViewController: UIViewController {
 }
 
 extension RemindersViewController: RemindersView {
+
     func showNoReminders() {
         let label = UILabel()
         label.text = "You have no reminders"
         label.textAlignment = .center
         label.backgroundColor = .white
         view = label
+    }
+
+    func showReminders(reminders: [Reminder]) {
     }
 }

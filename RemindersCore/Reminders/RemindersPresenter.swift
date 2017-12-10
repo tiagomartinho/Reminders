@@ -2,7 +2,7 @@ public class RemindersPresenter {
 
     weak var view: RemindersView?
     weak var router: Router?
-    weak var repository: RemindersRepository?
+    let repository: RemindersRepository
 
     public init(view: RemindersView,
                 router: Router,
@@ -13,8 +13,12 @@ public class RemindersPresenter {
     }
 
     public func loadReminders() {
-        repository?.load()
-        view?.showNoReminders()
+        let reminders = repository.load()
+        if reminders.isEmpty {
+            view?.showNoReminders()
+        } else {
+            view?.showReminders(reminders: reminders)
+        }
     }
 
     public func addNewReminder() {
