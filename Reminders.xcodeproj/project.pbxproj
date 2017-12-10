@@ -17,7 +17,7 @@
 		24089DC41FDDC08900BC4294 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC31FDDC08900BC4294 /* Reminder.swift */; };
 		24089DC61FDDC0A200BC4294 /* SpyRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC51FDDC0A200BC4294 /* SpyRemindersRepository.swift */; };
 		24089DC81FDDC0E800BC4294 /* RemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC71FDDC0E800BC4294 /* RemindersRepository.swift */; };
-		24089DCA1FDDC1A600BC4294 /* InMemoryRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC91FDDC1A600BC4294 /* InMemoryRemindersRepository.swift */; };
+		24089DCC1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DCB1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift */; };
 		244295411FDC40D300CAD00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244295401FDC40D300CAD00D /* Assets.xcassets */; };
 		244295441FDC40D300CAD00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244295421FDC40D300CAD00D /* LaunchScreen.storyboard */; };
 		245F7BFF1FDC45FD00F319E1 /* RemindersEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */; };
@@ -95,7 +95,7 @@
 		24089DC31FDDC08900BC4294 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		24089DC51FDDC0A200BC4294 /* SpyRemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyRemindersRepository.swift; sourceTree = "<group>"; };
 		24089DC71FDDC0E800BC4294 /* RemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersRepository.swift; sourceTree = "<group>"; };
-		24089DC91FDDC1A600BC4294 /* InMemoryRemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryRemindersRepository.swift; sourceTree = "<group>"; };
+		24089DCB1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryRemindersRepository.swift; sourceTree = "<group>"; };
 		244295361FDC40D300CAD00D /* Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244295401FDC40D300CAD00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244295431FDC40D300CAD00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -239,7 +239,6 @@
 				24089DB91FDDBBC900BC4294 /* Reminders */,
 				24089DBA1FDDBBD400BC4294 /* Add Reminder */,
 				245F7BF91FDC42F000F319E1 /* Supporting Files */,
-				24089DC91FDDC1A600BC4294 /* InMemoryRemindersRepository.swift */,
 			);
 			path = Reminders;
 			sourceTree = "<group>";
@@ -294,6 +293,7 @@
 				24089DB31FDDB6BC00BC4294 /* View.swift */,
 				24089DC31FDDC08900BC4294 /* Reminder.swift */,
 				24089DC71FDDC0E800BC4294 /* RemindersRepository.swift */,
+				24089DCB1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift */,
 				24089DBB1FDDBBDB00BC4294 /* Reminders */,
 				24089DC21FDDBC7B00BC4294 /* Add Reminder */,
 				245F7C2A1FDC4FC400F319E1 /* Supporting Files */,
@@ -551,7 +551,6 @@
 			files = (
 				24089DB81FDDB9C200BC4294 /* AddReminderViewController.swift in Sources */,
 				24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */,
-				24089DCA1FDDC1A600BC4294 /* InMemoryRemindersRepository.swift in Sources */,
 				245F7C031FDC46D500F319E1 /* RemindersViewController.swift in Sources */,
 				245F7C011FDC46AC00F319E1 /* AppDelegate.swift in Sources */,
 			);
@@ -583,6 +582,7 @@
 				24089DB21FDDB65F00BC4294 /* Router.swift in Sources */,
 				245F7C2C1FDC4FFA00F319E1 /* RemindersPresenter.swift in Sources */,
 				24089DC81FDDC0E800BC4294 /* RemindersRepository.swift in Sources */,
+				24089DCC1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

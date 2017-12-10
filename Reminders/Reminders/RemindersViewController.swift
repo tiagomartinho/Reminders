@@ -22,7 +22,10 @@ class RemindersViewController: UIViewController {
 
     private func initCollaborators() {
         router = AppRouter(controller: self)
-        presenter = RemindersPresenter(view: self, router: router)
+        let repository = InMemoryRemindersRepository()
+        presenter = RemindersPresenter(view: self,
+                                       router: router,
+                                       repository: repository)
     }
 
     @objc private func addReminder() {
