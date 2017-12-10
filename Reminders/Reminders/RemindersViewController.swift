@@ -3,8 +3,8 @@ import RemindersCore
 
 class RemindersViewController: UIViewController {
 
-    private var presenter: RemindersPresenter!
     private var router: Router!
+    private var presenter: RemindersPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -18,6 +18,8 @@ class AppRouter: Router {
         switch view {
         case .addReminder:
             return UINavigationController(rootViewController: AddReminderViewController())
+        case .reminders:
+            return UINavigationController(rootViewController: RemindersViewController())
         }
     }
 }
