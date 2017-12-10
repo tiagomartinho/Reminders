@@ -18,9 +18,10 @@ class AppRouter: Router {
         if let controller = controller {
             controller.present(viewController(from: view),
                                animated: true, completion: nil)
-        }
-        if let window = window {
-            window.rootViewController = viewController(from: view)
+        } else {
+            if let window = window {
+                window.rootViewController = viewController(from: view)
+            }
         }
     }
 
@@ -28,10 +29,30 @@ class AppRouter: Router {
         let rootViewController: UIViewController
         switch view {
         case .addReminder:
-            rootViewController = AddReminderViewController()
+            rootViewController = buildAddReminderViewController()
         case .reminders:
-            rootViewController = RemindersViewController()
+            rootViewController = buildRemindersViewController()
         }
-        return UINavigationController(rootViewController: rootViewController)
+        controller = UINavigationController(rootViewController: rootViewController)
+        return controller!
+    }
+
+    private func buildAddReminderViewController() -> AddReminderViewController {
+        let controller = AddReminderViewController()
+        let repository = InMemoryRemindersRepository()
+        let presenter = AddReminderPresenter(router: self,
+                                             repository: repository)
+        controller.presenter = presenter
+        return controller
+    }
+
+    private func buildRemindersViewController() -> RemindersViewController {
+        let controller = RemindersViewController()
+        let repository = InMemoryRemindersRepository()
+        let presenter = RemindersPresenter(view: controller,
+                                           router: self,
+                                           repository: repository)
+        controller.presenter = presenter
+        return controller
     }
 }

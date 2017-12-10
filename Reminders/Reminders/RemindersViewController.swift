@@ -3,15 +3,13 @@ import RemindersCore
 
 class RemindersViewController: UIViewController {
 
-    private var router: Router!
-    private var presenter: RemindersPresenter!
+    var presenter: RemindersPresenter!
 
     private var reminders: [Reminder]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
-        initCollaborators()
         presenter.loadReminders()
     }
 
@@ -24,14 +22,6 @@ class RemindersViewController: UIViewController {
     private func setRightBarButton() {
         let addReminderButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addReminder))
         navigationItem.setRightBarButtonItems([addReminderButton], animated: false)
-    }
-
-    private func initCollaborators() {
-        router = AppRouter(controller: self)
-        let repository = InMemoryRemindersRepository()
-        presenter = RemindersPresenter(view: self,
-                                       router: router,
-                                       repository: repository)
     }
 
     @objc private func addReminder() {

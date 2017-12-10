@@ -1,7 +1,7 @@
 public class AddReminderPresenter {
 
-    weak var router: Router?
-    weak var repository: RemindersRepository?
+    let router: Router
+    let repository: RemindersRepository
 
     public init(router: Router, repository: RemindersRepository) {
         self.router = router
@@ -9,11 +9,11 @@ public class AddReminderPresenter {
     }
 
     public func cancel() {
-        router?.route(to: .reminders)
+        router.route(to: .reminders)
     }
 
     public func save(_ reminder: Reminder) {
-        repository?.save(reminder)
-        router?.route(to: .reminders)
+        repository.save(reminder)
+        router.route(to: .reminders)
     }
 }

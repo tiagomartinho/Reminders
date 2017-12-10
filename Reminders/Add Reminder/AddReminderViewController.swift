@@ -3,16 +3,13 @@ import RemindersCore
 
 class AddReminderViewController: UIViewController {
 
-    private var router: Router!
-    private var repository: RemindersRepository!
-    private var presenter: AddReminderPresenter!
+    var presenter: AddReminderPresenter!
 
     private var titleTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
-        initCollaborators()
     }
 
     private func initView() {
@@ -48,12 +45,6 @@ class AddReminderViewController: UIViewController {
         titleTextField.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
         let topAnchor = view.safeAreaLayoutGuide.topAnchor
         titleTextField.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
-    }
-
-    private func initCollaborators() {
-        router = AppRouter(controller: self)
-        repository = InMemoryRemindersRepository()
-        presenter = AddReminderPresenter(router: router, repository: repository)
     }
 
     @objc func saveReminder() {
