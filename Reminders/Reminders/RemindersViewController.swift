@@ -10,7 +10,6 @@ class RemindersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
-        presenter.loadReminders()
     }
 
     private func initView() {
@@ -22,6 +21,11 @@ class RemindersViewController: UIViewController {
     private func setRightBarButton() {
         let addReminderButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addReminder))
         navigationItem.setRightBarButtonItems([addReminderButton], animated: false)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.loadReminders()
     }
 
     @objc private func addReminder() {

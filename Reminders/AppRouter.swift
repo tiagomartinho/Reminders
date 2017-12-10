@@ -15,12 +15,15 @@ class AppRouter: Router {
     }
 
     func route(to view: View) {
-        if let controller = controller {
-            controller.present(viewController(from: view),
-                               animated: true, completion: nil)
-        } else {
-            if let window = window {
-                window.rootViewController = viewController(from: view)
+        switch view {
+        case .addReminder:
+            controller?.present(viewController(from: view), animated: true, completion: nil)
+        case .reminders:
+            if let _ = window?.rootViewController {
+                controller?.dismiss(animated: true, completion: nil)
+                controller = window?.rootViewController
+            } else {
+                window?.rootViewController = viewController(from: view)
             }
         }
     }
