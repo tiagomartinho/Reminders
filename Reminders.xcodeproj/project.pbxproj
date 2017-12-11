@@ -32,6 +32,7 @@
 		24FE16231FDF03F300D252F6 /* MockRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE161F1FDF03F300D252F6 /* MockRemindersRepository.swift */; };
 		24FE16241FDF03F300D252F6 /* SpyRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16201FDF03F300D252F6 /* SpyRemindersView.swift */; };
 		24FE16251FDF03F300D252F6 /* MockAddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16211FDF03F300D252F6 /* MockAddReminderView.swift */; };
+		24FE162E1FDF0DC100D252F6 /* SpyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE162D1FDF0DC100D252F6 /* SpyViewController.swift */; };
 		BB5273EA1FDEC060005629B4 /* MockControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */; };
 		BB5273EC1FDEC076005629B4 /* RemindersEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */; };
 		BB5273ED1FDEC07A005629B4 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D71FDEBDBB005629B4 /* AppRouterTests.swift */; };
@@ -121,6 +122,7 @@
 		24FE161F1FDF03F300D252F6 /* MockRemindersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRemindersRepository.swift; sourceTree = "<group>"; };
 		24FE16201FDF03F300D252F6 /* SpyRemindersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyRemindersView.swift; sourceTree = "<group>"; };
 		24FE16211FDF03F300D252F6 /* MockAddReminderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAddReminderView.swift; sourceTree = "<group>"; };
+		24FE162D1FDF0DC100D252F6 /* SpyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyViewController.swift; sourceTree = "<group>"; };
 		BB5273D71FDEBDBB005629B4 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 		BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockControllerFactory.swift; sourceTree = "<group>"; };
 		BB5273DF1FDEC029005629B4 /* RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -379,8 +381,17 @@
 			isa = PBXGroup;
 			children = (
 				BB5273E91FDEC048005629B4 /* Mocks */,
+				24FE162F1FDF0DD300D252F6 /* Spies */,
 			);
 			path = "Test Doubles";
+			sourceTree = "<group>";
+		};
+		24FE162F1FDF0DD300D252F6 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				24FE162D1FDF0DC100D252F6 /* SpyViewController.swift */,
+			);
+			path = Spies;
 			sourceTree = "<group>";
 		};
 		BB5273D61FDEBDA7005629B4 /* Router */ = {
@@ -687,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5273ED1FDEC07A005629B4 /* AppRouterTests.swift in Sources */,
+				24FE162E1FDF0DC100D252F6 /* SpyViewController.swift in Sources */,
 				BB5273EA1FDEC060005629B4 /* MockControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
