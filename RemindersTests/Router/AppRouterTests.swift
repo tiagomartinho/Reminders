@@ -41,7 +41,7 @@ class SpyViewController: UIViewController {
         super.present(viewControllerToPresent, animated: flag, completion: completion)
     }
 
-    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+    override func dismiss(animated _: Bool, completion _: (() -> Void)? = nil) {
         dismissed = true
     }
 }
