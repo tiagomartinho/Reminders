@@ -2,16 +2,25 @@
 import XCTest
 
 class AppRouterTests: XCTestCase {
-    func testAppRouter() {
-        let window = UIWindow()
+
+    var window: UIWindow!
+    var reminderController: SpyViewController!
+    var addReminderController: SpyViewController!
+    var appRouter: AppRouter!
+
+    override func setUp() {
+        super.setUp()
+        window = UIWindow()
         window.makeKeyAndVisible()
+        addReminderController = SpyViewController()
+        reminderController = SpyViewController()
+        let controllerFactory = MockControllerFactory(addReminderController: addReminderController,
+                                                      reminderController: reminderController)
+        appRouter = AppRouter(window: window,
+                              controllerFactory: controllerFactory)
+    }
 
-        let addReminderController = SpyViewController()
-        let reminderController = SpyViewController()
-        let mockControllerFactory = MockControllerFactory(addReminderController: addReminderController,
-                                                          reminderController: reminderController)
-
-        let appRouter = AppRouter(window: window, controllerFactory: mockControllerFactory)
+    func testAppRouter() {
         appRouter.route(to: .reminders)
 
         XCTAssertNotNil(window.rootViewController)
