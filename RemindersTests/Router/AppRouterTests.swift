@@ -3,30 +3,30 @@ import XCTest
 
 class AppRouterTests: XCTestCase {
     func testAppRouter() {
-        let fakeWindow = UIWindow()
-        fakeWindow.makeKeyAndVisible()
+        let window = UIWindow()
+        window.makeKeyAndVisible()
 
         let addReminderController = SpyViewController()
         let reminderController = SpyViewController()
         let mockControllerFactory = MockControllerFactory(addReminderController: addReminderController,
                                                           reminderController: reminderController)
 
-        let appRouter = AppRouter(window: fakeWindow, controllerFactory: mockControllerFactory)
+        let appRouter = AppRouter(window: window, controllerFactory: mockControllerFactory)
         appRouter.route(to: .reminders)
 
-        XCTAssertNotNil(fakeWindow.rootViewController)
-        XCTAssertEqual(fakeWindow.rootViewController!, reminderController)
+        XCTAssertNotNil(window.rootViewController)
+        XCTAssertEqual(window.rootViewController!, reminderController)
 
         appRouter.route(to: .addReminder)
 
-        XCTAssertNotNil(fakeWindow.rootViewController?.presentedViewController)
+        XCTAssertNotNil(window.rootViewController?.presentedViewController)
         XCTAssertTrue(reminderController.presenting)
-        XCTAssertEqual(fakeWindow.rootViewController!.presentedViewController!, addReminderController)
+        XCTAssertEqual(window.rootViewController!.presentedViewController!, addReminderController)
 
         appRouter.route(to: .reminders)
 
         XCTAssertTrue(addReminderController.dismissed)
-        XCTAssertNotNil(fakeWindow.rootViewController)
-        XCTAssertEqual(fakeWindow.rootViewController!, reminderController)
+        XCTAssertNotNil(window.rootViewController)
+        XCTAssertEqual(window.rootViewController!, reminderController)
     }
 }
