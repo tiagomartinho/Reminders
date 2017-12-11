@@ -367,6 +367,22 @@
 			path = "Test Doubles";
 			sourceTree = "<group>";
 		};
+		24FE16291FDF08F300D252F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5273E31FDEC029005629B4 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24FE162A1FDF093600D252F6 /* Test Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				BB5273E91FDEC048005629B4 /* Mocks */,
+			);
+			path = "Test Doubles";
+			sourceTree = "<group>";
+		};
 		BB5273D61FDEBDA7005629B4 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,18 +395,18 @@
 			isa = PBXGroup;
 			children = (
 				BB5273D61FDEBDA7005629B4 /* Router */,
-				BB5273E91FDEC048005629B4 /* Mock */,
-				BB5273E31FDEC029005629B4 /* Info.plist */,
+				24FE162A1FDF093600D252F6 /* Test Doubles */,
+				24FE16291FDF08F300D252F6 /* Supporting Files */,
 			);
 			path = RemindersTests;
 			sourceTree = "<group>";
 		};
-		BB5273E91FDEC048005629B4 /* Mock */ = {
+		BB5273E91FDEC048005629B4 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */,
 			);
-			path = Mock;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -983,7 +999,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44Q2J6374R;
-				INFOPLIST_FILE = RemindersTests/Info.plist;
+				INFOPLIST_FILE = "RemindersTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reminder.RemindersTests;
@@ -1000,7 +1016,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44Q2J6374R;
-				INFOPLIST_FILE = RemindersTests/Info.plist;
+				INFOPLIST_FILE = "RemindersTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reminder.RemindersTests;
