@@ -35,8 +35,6 @@ To run the tests for the iOS application:
 
 * Use a Mocking framework to remove Mocks and Spies in tests
 * Use a Dependency Injection framework to improve ControllerFactory
-* Test AppRouter routing by abstracting UIKit navigation
-* Render AppRouter routing explicit
 * Refactor RemindersEndToEndTest
 * Refactor RemindersPresenterTest
 * Refactor AddReminderPresenterTest

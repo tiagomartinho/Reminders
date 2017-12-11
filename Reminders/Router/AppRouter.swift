@@ -1,12 +1,12 @@
 import RemindersCore
-import UIKit
 
 class AppRouter: Router {
-    private var controller: UIViewController?
-    private var window: UIWindow?
+
+    private var controller: ViewController?
+    private var window: Window?
     private let controllerFactory: ControllerFactory
 
-    init(window: UIWindow,
+    init(window: Window,
          controllerFactory: ControllerFactory = ControllerFactory()) {
         self.window = window
         self.controllerFactory = controllerFactory
@@ -16,16 +16,15 @@ class AppRouter: Router {
         switch view {
         case .addReminder:
             let controllerToPresent = controllerFactory.build(from: view, router: self)
-            controller?.present(controllerToPresent,
-                                animated: true, completion: nil)
+            controller?.present(controllerToPresent)
             controller = controllerToPresent
         case .reminders:
-            if window?.rootViewController != nil {
-                controller?.dismiss(animated: true, completion: nil)
+            if window?.rootView != nil {
+                controller?.dismiss()
             } else {
-                window?.rootViewController = controllerFactory.build(from: view, router: self)
+                window?.rootView = controllerFactory.build(from: view, router: self)
             }
-            controller = window?.rootViewController
+            controller = window?.rootView
         }
     }
 }

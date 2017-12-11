@@ -3,17 +3,16 @@ import XCTest
 
 class AppRouterTests: XCTestCase {
 
-    var window: UIWindow!
-    var reminderController: SpyViewController!
-    var addReminderController: SpyViewController!
+    var window: Window!
+    var addReminderController: FakeViewController!
+    var reminderController: FakeViewController!
     var appRouter: AppRouter!
 
     override func setUp() {
         super.setUp()
-        window = UIWindow()
-        window.makeKeyAndVisible()
-        addReminderController = SpyViewController()
-        reminderController = SpyViewController()
+        window = FakeWindow()
+        addReminderController = FakeViewController(id: "Add Reminder")
+        reminderController = FakeViewController(id: "Reminders")
         let controllerFactory = MockControllerFactory(addReminderController: addReminderController,
                                                       reminderController: reminderController)
         appRouter = AppRouter(window: window,
@@ -23,15 +22,17 @@ class AppRouterTests: XCTestCase {
     func testInitialRoutingSetRootView() {
         appRouter.route(to: .reminders)
 
-        XCTAssertEqual(window.rootViewController!, reminderController)
+        let rootView = window.rootView as? FakeViewController
+        XCTAssertEqual(rootView?.id, "Reminders")
     }
 
     func testRouteToAddReminderFromRemindersPresentView() {
         appRouter.route(to: .reminders)
         appRouter.route(to: .addReminder)
 
-        XCTAssertTrue(reminderController.presenting)
-        XCTAssertEqual(window.rootViewController!.presentedViewController!, addReminderController)
+        XCTAssertTrue(reminderController.presented)
+        let presentedView = window.rootView?.presentedView as? FakeViewController
+        XCTAssertEqual(presentedView?.id, "Add Reminder")
     }
 
     func testRouteToRemindersFromAddDismissView() {
@@ -40,6 +41,7 @@ class AppRouterTests: XCTestCase {
         appRouter.route(to: .reminders)
 
         XCTAssertTrue(addReminderController.dismissed)
-        XCTAssertEqual(window.rootViewController!, reminderController)
+        let rootView = window.rootView as? FakeViewController
+        XCTAssertEqual(rootView?.id, "Reminders")
     }
 }

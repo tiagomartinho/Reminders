@@ -32,7 +32,12 @@
 		24FE16231FDF03F300D252F6 /* MockRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE161F1FDF03F300D252F6 /* MockRemindersRepository.swift */; };
 		24FE16241FDF03F300D252F6 /* SpyRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16201FDF03F300D252F6 /* SpyRemindersView.swift */; };
 		24FE16251FDF03F300D252F6 /* MockAddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16211FDF03F300D252F6 /* MockAddReminderView.swift */; };
-		24FE162E1FDF0DC100D252F6 /* SpyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE162D1FDF0DC100D252F6 /* SpyViewController.swift */; };
+		24FE162E1FDF0DC100D252F6 /* FakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE162D1FDF0DC100D252F6 /* FakeViewController.swift */; };
+		24FE16311FDF150200D252F6 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16301FDF150200D252F6 /* Window.swift */; };
+		24FE16331FDF151C00D252F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16321FDF151C00D252F6 /* ViewController.swift */; };
+		24FE16351FDF155E00D252F6 /* UIWindow+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16341FDF155E00D252F6 /* UIWindow+Window.swift */; };
+		24FE16371FDF157600D252F6 /* UIViewController+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16361FDF157600D252F6 /* UIViewController+ViewController.swift */; };
+		24FE16391FDF17E300D252F6 /* FakeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE16381FDF17E300D252F6 /* FakeWindow.swift */; };
 		BB5273EA1FDEC060005629B4 /* MockControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */; };
 		BB5273EC1FDEC076005629B4 /* RemindersEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */; };
 		BB5273ED1FDEC07A005629B4 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D71FDEBDBB005629B4 /* AppRouterTests.swift */; };
@@ -122,7 +127,12 @@
 		24FE161F1FDF03F300D252F6 /* MockRemindersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRemindersRepository.swift; sourceTree = "<group>"; };
 		24FE16201FDF03F300D252F6 /* SpyRemindersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyRemindersView.swift; sourceTree = "<group>"; };
 		24FE16211FDF03F300D252F6 /* MockAddReminderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAddReminderView.swift; sourceTree = "<group>"; };
-		24FE162D1FDF0DC100D252F6 /* SpyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyViewController.swift; sourceTree = "<group>"; };
+		24FE162D1FDF0DC100D252F6 /* FakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewController.swift; sourceTree = "<group>"; };
+		24FE16301FDF150200D252F6 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		24FE16321FDF151C00D252F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24FE16341FDF155E00D252F6 /* UIWindow+Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Window.swift"; sourceTree = "<group>"; };
+		24FE16361FDF157600D252F6 /* UIViewController+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ViewController.swift"; sourceTree = "<group>"; };
+		24FE16381FDF17E300D252F6 /* FakeWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWindow.swift; sourceTree = "<group>"; };
 		BB5273D71FDEBDBB005629B4 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 		BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockControllerFactory.swift; sourceTree = "<group>"; };
 		BB5273DF1FDEC029005629B4 /* RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,8 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				245F7C001FDC46AC00F319E1 /* AppDelegate.swift */,
-				24089DB51FDDB7D100BC4294 /* AppRouter.swift */,
 				24089DCF1FDDDEFF00BC4294 /* ControllerFactory.swift */,
+				24FE163B1FDF182C00D252F6 /* Router */,
 				24BCB8F31FDDF00B00BA94C3 /* Repositories */,
 				24089DB91FDDBBC900BC4294 /* Reminders */,
 				24089DBA1FDDBBD400BC4294 /* Add Reminder */,
@@ -381,17 +391,46 @@
 			isa = PBXGroup;
 			children = (
 				BB5273E91FDEC048005629B4 /* Mocks */,
-				24FE162F1FDF0DD300D252F6 /* Spies */,
+				24FE163A1FDF17F800D252F6 /* Fakes */,
 			);
 			path = "Test Doubles";
 			sourceTree = "<group>";
 		};
-		24FE162F1FDF0DD300D252F6 /* Spies */ = {
+		24FE163A1FDF17F800D252F6 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				24FE162D1FDF0DC100D252F6 /* SpyViewController.swift */,
+				24FE162D1FDF0DC100D252F6 /* FakeViewController.swift */,
+				24FE16381FDF17E300D252F6 /* FakeWindow.swift */,
 			);
-			path = Spies;
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		24FE163B1FDF182C00D252F6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				24089DB51FDDB7D100BC4294 /* AppRouter.swift */,
+				24FE163C1FDF183D00D252F6 /* Window */,
+				24FE163D1FDF184400D252F6 /* ViewController */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		24FE163C1FDF183D00D252F6 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				24FE16301FDF150200D252F6 /* Window.swift */,
+				24FE16341FDF155E00D252F6 /* UIWindow+Window.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		24FE163D1FDF184400D252F6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24FE16321FDF151C00D252F6 /* ViewController.swift */,
+				24FE16361FDF157600D252F6 /* UIViewController+ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		BB5273D61FDEBDA7005629B4 /* Router */ = {
@@ -639,7 +678,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -650,10 +689,14 @@
 			files = (
 				24089DB81FDDB9C200BC4294 /* AddReminderViewController.swift in Sources */,
 				24BCB8F21FDDEFB900BA94C3 /* InMemoryRemindersRepository.swift in Sources */,
+				24FE16311FDF150200D252F6 /* Window.swift in Sources */,
 				24089DD01FDDDEFF00BC4294 /* ControllerFactory.swift in Sources */,
 				24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */,
 				245F7C031FDC46D500F319E1 /* RemindersViewController.swift in Sources */,
+				24FE16331FDF151C00D252F6 /* ViewController.swift in Sources */,
 				245F7C011FDC46AC00F319E1 /* AppDelegate.swift in Sources */,
+				24FE16351FDF155E00D252F6 /* UIWindow+Window.swift in Sources */,
+				24FE16371FDF157600D252F6 /* UIViewController+ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +741,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5273ED1FDEC07A005629B4 /* AppRouterTests.swift in Sources */,
-				24FE162E1FDF0DC100D252F6 /* SpyViewController.swift in Sources */,
+				24FE162E1FDF0DC100D252F6 /* FakeViewController.swift in Sources */,
+				24FE16391FDF17E300D252F6 /* FakeWindow.swift in Sources */,
 				BB5273EA1FDEC060005629B4 /* MockControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

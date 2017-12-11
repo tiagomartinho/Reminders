@@ -2,13 +2,14 @@ import RemindersCore
 import UIKit
 
 class ControllerFactory {
+
     let repository: RemindersRepository
 
     init(repository: RemindersRepository = InMemoryRemindersRepository()) {
         self.repository = repository
     }
 
-    func build(from view: View, router: Router) -> UIViewController {
+    func build(from view: View, router: Router) -> ViewController {
         let rootViewController: UIViewController
         switch view {
         case .addReminder:
