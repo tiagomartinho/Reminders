@@ -38,3 +38,4 @@ To run the tests for the iOS application:
 * Refactor RemindersEndToEndTest
 * Refactor RemindersPresenterTest
 * Refactor AddReminderPresenterTest
+* Extract business logic in Presenters into Use Cases
