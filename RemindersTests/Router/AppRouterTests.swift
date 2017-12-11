@@ -20,12 +20,15 @@ class AppRouterTests: XCTestCase {
                               controllerFactory: controllerFactory)
     }
 
-    func testAppRouter() {
+    func testInitialRoutingSetRootView() {
         appRouter.route(to: .reminders)
 
         XCTAssertNotNil(window.rootViewController)
         XCTAssertEqual(window.rootViewController!, reminderController)
+    }
 
+    func testAppRouter() {
+        appRouter.route(to: .reminders)
         appRouter.route(to: .addReminder)
 
         XCTAssertNotNil(window.rootViewController?.presentedViewController)
