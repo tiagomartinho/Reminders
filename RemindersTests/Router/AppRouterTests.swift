@@ -6,8 +6,8 @@ class AppRouterTests: XCTestCase {
         let fakeWindow = UIWindow()
         fakeWindow.makeKeyAndVisible()
 
-        let addReminderController = StubViewController()
-        let reminderController = StubViewController()
+        let addReminderController = SpyViewController()
+        let reminderController = SpyViewController()
         let mockControllerFactory = MockControllerFactory(addReminderController: addReminderController,
                                                           reminderController: reminderController)
 
@@ -31,7 +31,7 @@ class AppRouterTests: XCTestCase {
     }
 }
 
-class StubViewController: UIViewController {
+class SpyViewController: UIViewController {
     private(set) var dismissed = false
     private(set) var presenting = false
 
