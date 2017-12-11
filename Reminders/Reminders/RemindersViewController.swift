@@ -49,6 +49,7 @@ extension RemindersViewController: RemindersView {
         tableView.accessibilityLabel = "Reminders"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         tableView.dataSource = self
+        tableView.allowsSelection = false
         view = tableView
     }
 }
