@@ -27,14 +27,18 @@ class AppRouterTests: XCTestCase {
         XCTAssertEqual(window.rootViewController!, reminderController)
     }
 
-    func testAppRouter() {
+    func testRouteToAddReminderFromRemindersPresentView() {
         appRouter.route(to: .reminders)
         appRouter.route(to: .addReminder)
 
         XCTAssertNotNil(window.rootViewController?.presentedViewController)
         XCTAssertTrue(reminderController.presenting)
         XCTAssertEqual(window.rootViewController!.presentedViewController!, addReminderController)
+    }
 
+    func testRouteToRemindersFromAddDismissView() {
+        appRouter.route(to: .reminders)
+        appRouter.route(to: .addReminder)
         appRouter.route(to: .reminders)
 
         XCTAssertTrue(addReminderController.dismissed)
