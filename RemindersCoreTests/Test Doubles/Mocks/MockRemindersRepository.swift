@@ -2,9 +2,10 @@
 
 class MockRemindersRepository: RemindersRepository {
 
-    var saveWasCalled = false
-    var lastReminder: Reminder?
-    var loadWasCalled = false
+    private(set) var saveWasCalled = false
+    private(set) var lastReminder: Reminder?
+    private(set) var loadWasCalled = false
+
     var reminders = [Reminder]()
 
     func save(_ reminder: Reminder) {
