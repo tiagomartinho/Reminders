@@ -2,6 +2,10 @@
 
 An iOS application written in Swift to demonstrate how to implement a Clean Architecture in iOS.
 
+## Idea
+
+The idea is to implement the simplest To-Do List app. The user can add a Reminder with a Title and visualize the existing Reminders in a list.
+
 ## CI Status
 
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5a2ecd23fa115200016a72b8&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5a2ecd23fa115200016a72b8/build/latest?branch=master)
