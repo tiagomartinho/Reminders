@@ -39,3 +39,5 @@ To run the tests for the iOS application:
 * Refactor RemindersPresenterTest
 * Refactor AddReminderPresenterTest
 * Extract business logic in Presenters into Use Cases
+* Remove Route dependency in ControllerFactory
+* Replace conditional in AppRouter
