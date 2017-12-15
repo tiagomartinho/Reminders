@@ -17,6 +17,6 @@ class RemindersViewControllerFactory: UIViewControllerFactory {
                                            router: router,
                                            repository: repository)
         controller.presenter = presenter
-        return controller
+        return UINavigationController(rootViewController: controller)
     }
 }
