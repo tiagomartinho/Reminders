@@ -41,6 +41,9 @@
 		BB5273EA1FDEC060005629B4 /* MockControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */; };
 		BB5273EC1FDEC076005629B4 /* RemindersEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */; };
 		BB5273ED1FDEC07A005629B4 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D71FDEBDBB005629B4 /* AppRouterTests.swift */; };
+		EA2318701FE42DDC0078564F /* UIViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23186F1FE42DDC0078564F /* UIViewControllerFactory.swift */; };
+		EA2318721FE42DEA0078564F /* AddReminderViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2318711FE42DEA0078564F /* AddReminderViewControllerFactory.swift */; };
+		EA2318741FE42DF90078564F /* RemindersViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2318731FE42DF90078564F /* RemindersViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +140,9 @@
 		BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockControllerFactory.swift; sourceTree = "<group>"; };
 		BB5273DF1FDEC029005629B4 /* RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5273E31FDEC029005629B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA23186F1FE42DDC0078564F /* UIViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerFactory.swift; sourceTree = "<group>"; };
+		EA2318711FE42DEA0078564F /* AddReminderViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewControllerFactory.swift; sourceTree = "<group>"; };
+		EA2318731FE42DF90078564F /* RemindersViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,7 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				245F7C001FDC46AC00F319E1 /* AppDelegate.swift */,
-				24089DCF1FDDDEFF00BC4294 /* ControllerFactory.swift */,
+				EA2318751FE42E0D0078564F /* Factories */,
 				24FE163B1FDF182C00D252F6 /* Router */,
 				24BCB8F31FDDF00B00BA94C3 /* Repositories */,
 				24089DB91FDDBBC900BC4294 /* Reminders */,
@@ -457,6 +463,17 @@
 				BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EA2318751FE42E0D0078564F /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				24089DCF1FDDDEFF00BC4294 /* ControllerFactory.swift */,
+				EA23186F1FE42DDC0078564F /* UIViewControllerFactory.swift */,
+				EA2318711FE42DEA0078564F /* AddReminderViewControllerFactory.swift */,
+				EA2318731FE42DF90078564F /* RemindersViewControllerFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,10 +709,13 @@
 				24FE16311FDF150200D252F6 /* Window.swift in Sources */,
 				24089DD01FDDDEFF00BC4294 /* ControllerFactory.swift in Sources */,
 				24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */,
+				EA2318701FE42DDC0078564F /* UIViewControllerFactory.swift in Sources */,
 				245F7C031FDC46D500F319E1 /* RemindersViewController.swift in Sources */,
+				EA2318721FE42DEA0078564F /* AddReminderViewControllerFactory.swift in Sources */,
 				24FE16331FDF151C00D252F6 /* ViewController.swift in Sources */,
 				245F7C011FDC46AC00F319E1 /* AppDelegate.swift in Sources */,
 				24FE16351FDF155E00D252F6 /* UIWindow+Window.swift in Sources */,
+				EA2318741FE42DF90078564F /* RemindersViewControllerFactory.swift in Sources */,
 				24FE16371FDF157600D252F6 /* UIViewController+ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
