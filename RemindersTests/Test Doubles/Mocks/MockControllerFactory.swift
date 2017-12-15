@@ -12,8 +12,8 @@ class MockControllerFactory: ControllerFactory {
         self.reminderController = reminderController
     }
 
-    override func build(from view: View, factory: UIViewControllerFactory) -> ViewController {
-        switch view {
+    override func build(from route: Route, factory: UIViewControllerFactory) -> ViewController {
+        switch route {
         case .addReminder:
             return addReminderController
         case .reminders:

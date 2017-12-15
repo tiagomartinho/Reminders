@@ -3,10 +3,10 @@
 class SpyRouter: Router {
 
     var routeWasCalled = false
-    var lastView: View?
+    var lastRoute: Route?
 
-    func route(to view: View) {
+    func route(to route: Route) {
         routeWasCalled = true
-        lastView = view
+        lastRoute = route
     }
 }

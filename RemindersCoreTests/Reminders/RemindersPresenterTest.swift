@@ -44,7 +44,7 @@ class RemindersPresenterTest: XCTestCase {
         presenter.addNewReminder()
 
         XCTAssert(router.routeWasCalled)
-        XCTAssertEqual(.addReminder, router.lastView)
+        XCTAssertEqual(.addReminder, router.lastRoute)
     }
 
     func testLoadRemindersFromRemindersRepository() {

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24089DB21FDDB65F00BC4294 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB11FDDB65F00BC4294 /* Router.swift */; };
-		24089DB41FDDB6BC00BC4294 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB31FDDB6BC00BC4294 /* View.swift */; };
+		24089DB41FDDB6BC00BC4294 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB31FDDB6BC00BC4294 /* Route.swift */; };
 		24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB51FDDB7D100BC4294 /* AppRouter.swift */; };
 		24089DB81FDDB9C200BC4294 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DB71FDDB9C200BC4294 /* AddReminderViewController.swift */; };
 		24089DBE1FDDBC3E00BC4294 /* AddReminderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DBD1FDDBC3E00BC4294 /* AddReminderPresenter.swift */; };
@@ -100,7 +100,7 @@
 
 /* Begin PBXFileReference section */
 		24089DB11FDDB65F00BC4294 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		24089DB31FDDB6BC00BC4294 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		24089DB31FDDB6BC00BC4294 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		24089DB51FDDB7D100BC4294 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		24089DB71FDDB9C200BC4294 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 		24089DBD1FDDBC3E00BC4294 /* AddReminderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderPresenter.swift; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				24089DB11FDDB65F00BC4294 /* Router.swift */,
-				24089DB31FDDB6BC00BC4294 /* View.swift */,
+				24089DB31FDDB6BC00BC4294 /* Route.swift */,
 				24089DC31FDDC08900BC4294 /* Reminder.swift */,
 				24089DCE1FDDD66500BC4294 /* Repositories */,
 				24089DBB1FDDBBDB00BC4294 /* Reminders */,
@@ -732,7 +732,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24089DB41FDDB6BC00BC4294 /* View.swift in Sources */,
+				24089DB41FDDB6BC00BC4294 /* Route.swift in Sources */,
 				245F7C2E1FDC500300F319E1 /* RemindersView.swift in Sources */,
 				24CC3A0A1FDDF3EE00F9D1EF /* AddReminderView.swift in Sources */,
 				24089DBE1FDDBC3E00BC4294 /* AddReminderPresenter.swift in Sources */,

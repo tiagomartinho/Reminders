@@ -12,17 +12,17 @@ class AppRouter: Router {
         self.controllerFactory = controllerFactory
     }
 
-    func route(to view: View) {
-        switch view {
+    func route(to route: Route) {
+        switch route {
         case .addReminder:
-            let controllerToPresent = controllerFactory.build(from: view, factory: AddReminderViewControllerFactory(router: self, repository: InMemoryRemindersRepository()))
+            let controllerToPresent = controllerFactory.build(from: route, factory: AddReminderViewControllerFactory(router: self, repository: InMemoryRemindersRepository()))
             controller?.present(controllerToPresent)
             controller = controllerToPresent
         case .reminders:
             if window?.rootView != nil {
                 controller?.dismiss()
             } else {
-                window?.rootView = controllerFactory.build(from: view, factory: RemindersViewControllerFactory(router: self, repository: InMemoryRemindersRepository()))
+                window?.rootView = controllerFactory.build(from: route, factory: RemindersViewControllerFactory(router: self, repository: InMemoryRemindersRepository()))
             }
             controller = window?.rootView
         }

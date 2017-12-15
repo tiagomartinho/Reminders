@@ -1,3 +1,3 @@
 public protocol Router: class {
-    func route(to view: View)
+    func route(to route: Route)
 }
