@@ -1,7 +1,7 @@
 import RemindersCore
 import UIKit
 
-class RemindersViewControllerFactory: UIViewControllerFactory {
+class RemindersViewControllerFactory: ViewControllerFactory {
 
     let router: Router
     let repository: RemindersRepository
@@ -11,7 +11,7 @@ class RemindersViewControllerFactory: UIViewControllerFactory {
         self.repository = repository
     }
 
-    func build() -> UIViewController {
+    func build() -> ViewController {
         let controller = RemindersViewController()
         let presenter = RemindersPresenter(view: controller,
                                            router: router,

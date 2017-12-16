@@ -1,8 +1,7 @@
 import RemindersCore
-import UIKit
 
 class ControllerFactory {
-    func build(from route: Route, factory: UIViewControllerFactory) -> ViewController {
+    func build(from route: Route, factory: ViewControllerFactory) -> ViewController {
         return factory.build()
     }
 }
