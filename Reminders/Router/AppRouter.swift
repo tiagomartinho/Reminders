@@ -15,12 +15,7 @@ class AppRouter: Router {
     func route(to route: Route) {
         let controllerToPresent = controllerFactory.build(from: route,
                                                           with: self)
-
-        switch route {
-        case .addReminder:
-            controller = AddReminderRouter(controller: controller).route(to: controllerToPresent)
-        case .reminders:
-            controller = RemindersRouter(controller: controller, window: window).route(to: controllerToPresent)
-        }
+        let router = ControllerRouterFactory(controller: controller, window: window).build(from: route)
+        controller = router.route(to: controllerToPresent)
     }
 }

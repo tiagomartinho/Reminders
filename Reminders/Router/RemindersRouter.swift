@@ -1,6 +1,6 @@
 import RemindersCore
 
-class RemindersRouter {
+class RemindersRouter: ViewControllerRouter {
 
     private var controller: ViewController?
     private let window: Window
