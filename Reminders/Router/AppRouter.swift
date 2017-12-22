@@ -5,25 +5,25 @@ class AppRouter: Router {
     private var controller: ViewController?
     private var window: Window?
     private let controllerFactory: ControllerFactory
-    private let repository = InMemoryRemindersRepository()
 
-    init(window: Window,
-         controllerFactory: ControllerFactory = ControllerFactory()) {
+    init(window: Window, controllerFactory: ControllerFactory) {
         self.window = window
         self.controllerFactory = controllerFactory
     }
 
     func route(to route: Route) {
+        let controllerToPresent = controllerFactory.build(from: route,
+                                                          with: self)
+
         switch route {
         case .addReminder:
-            let controllerToPresent = controllerFactory.build(from: route, factory: AddReminderViewControllerFactory(router: self, repository: repository))
             controller?.present(controllerToPresent)
             controller = controllerToPresent
         case .reminders:
             if window?.rootView != nil {
                 controller?.dismiss()
             } else {
-                window?.rootView = controllerFactory.build(from: route, factory: RemindersViewControllerFactory(router: self, repository: repository))
+                window?.rootView = controllerToPresent
             }
             controller = window?.rootView
         }

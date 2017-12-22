@@ -9,7 +9,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
         window?.makeKeyAndVisible()
-        let router = AppRouter(window: window!)
+        let router = AppRouter(window: window!,
+                               controllerFactory: ControllerFactory())
         router.route(to: .reminders)
         return true
     }
