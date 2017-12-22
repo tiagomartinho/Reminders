@@ -34,7 +34,7 @@ To run the tests for the iOS application:
 ## Possible Improvements
 
 * Use a Mocking framework to remove Mocks and Spies in tests
-* Use a Dependency Injection framework to improve ControllerFactory
+* Use a Dependency Injection framework to improve ViewControllerFactory and ControllerRouterFactory
 * Refactor RemindersEndToEndTest
 * Refactor RemindersPresenterTest
 * Refactor AddReminderPresenterTest
