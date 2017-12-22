@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         let router = AppRouter(window: window!,
-                               controllerFactory: ControllerFactory())
+                               controllerFactory: ViewControllerFactory())
         router.route(to: .reminders)
         return true
     }

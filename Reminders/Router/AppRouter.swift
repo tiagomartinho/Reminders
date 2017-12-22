@@ -5,9 +5,9 @@ class AppRouter: Router {
     private var controller: ViewController?
 
     private let window: Window
-    private let controllerFactory: ControllerFactory
+    private let controllerFactory: ViewControllerFactory
 
-    init(window: Window, controllerFactory: ControllerFactory) {
+    init(window: Window, controllerFactory: ViewControllerFactory) {
         self.window = window
         self.controllerFactory = controllerFactory
     }

@@ -15,7 +15,7 @@
 		24089DC01FDDBC5100BC4294 /* AddReminderPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DBF1FDDBC5100BC4294 /* AddReminderPresenterTest.swift */; };
 		24089DC41FDDC08900BC4294 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC31FDDC08900BC4294 /* Reminder.swift */; };
 		24089DC81FDDC0E800BC4294 /* RemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DC71FDDC0E800BC4294 /* RemindersRepository.swift */; };
-		24089DD01FDDDEFF00BC4294 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DCF1FDDDEFF00BC4294 /* ControllerFactory.swift */; };
+		24089DD01FDDDEFF00BC4294 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24089DCF1FDDDEFF00BC4294 /* ViewControllerFactory.swift */; };
 		244295411FDC40D300CAD00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244295401FDC40D300CAD00D /* Assets.xcassets */; };
 		244295441FDC40D300CAD00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244295421FDC40D300CAD00D /* LaunchScreen.storyboard */; };
 		245F7C011FDC46AC00F319E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7C001FDC46AC00F319E1 /* AppDelegate.swift */; };
@@ -45,8 +45,8 @@
 		BB5273EA1FDEC060005629B4 /* MockControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */; };
 		BB5273EC1FDEC076005629B4 /* RemindersEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F7BFE1FDC45FD00F319E1 /* RemindersEndToEndTest.swift */; };
 		BB5273ED1FDEC07A005629B4 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5273D71FDEBDBB005629B4 /* AppRouterTests.swift */; };
-		EA2318701FE42DDC0078564F /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23186F1FE42DDC0078564F /* ViewControllerFactory.swift */; };
-		EA2318721FE42DEA0078564F /* AddReminderViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2318711FE42DEA0078564F /* AddReminderViewControllerFactory.swift */; };
+		EA2318701FE42DDC0078564F /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23186F1FE42DDC0078564F /* ControllerFactory.swift */; };
+		EA2318721FE42DEA0078564F /* AddReminderControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2318711FE42DEA0078564F /* AddReminderControllerFactory.swift */; };
 		EA2318741FE42DF90078564F /* RemindersViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2318731FE42DF90078564F /* RemindersViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,7 +112,7 @@
 		24089DC31FDDC08900BC4294 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		24089DC71FDDC0E800BC4294 /* RemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersRepository.swift; sourceTree = "<group>"; };
 		24089DCB1FDDCA7F00BC4294 /* InMemoryRemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryRemindersRepository.swift; sourceTree = "<group>"; };
-		24089DCF1FDDDEFF00BC4294 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		24089DCF1FDDDEFF00BC4294 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		244295361FDC40D300CAD00D /* Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244295401FDC40D300CAD00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244295431FDC40D300CAD00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		BB5273D91FDEBE47005629B4 /* MockControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockControllerFactory.swift; sourceTree = "<group>"; };
 		BB5273DF1FDEC029005629B4 /* RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5273E31FDEC029005629B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA23186F1FE42DDC0078564F /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		EA2318711FE42DEA0078564F /* AddReminderViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewControllerFactory.swift; sourceTree = "<group>"; };
+		EA23186F1FE42DDC0078564F /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		EA2318711FE42DEA0078564F /* AddReminderControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderControllerFactory.swift; sourceTree = "<group>"; };
 		EA2318731FE42DF90078564F /* RemindersViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -480,9 +480,9 @@
 		EA2318751FE42E0D0078564F /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				24089DCF1FDDDEFF00BC4294 /* ControllerFactory.swift */,
-				EA23186F1FE42DDC0078564F /* ViewControllerFactory.swift */,
-				EA2318711FE42DEA0078564F /* AddReminderViewControllerFactory.swift */,
+				24089DCF1FDDDEFF00BC4294 /* ViewControllerFactory.swift */,
+				EA23186F1FE42DDC0078564F /* ControllerFactory.swift */,
+				EA2318711FE42DEA0078564F /* AddReminderControllerFactory.swift */,
 				EA2318731FE42DF90078564F /* RemindersViewControllerFactory.swift */,
 			);
 			path = Factories;
@@ -719,14 +719,14 @@
 				24089DB81FDDB9C200BC4294 /* AddReminderViewController.swift in Sources */,
 				24BCB8F21FDDEFB900BA94C3 /* InMemoryRemindersRepository.swift in Sources */,
 				24FE16311FDF150200D252F6 /* Window.swift in Sources */,
-				24089DD01FDDDEFF00BC4294 /* ControllerFactory.swift in Sources */,
+				24089DD01FDDDEFF00BC4294 /* ViewControllerFactory.swift in Sources */,
 				24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */,
 				24F90F1A1FED47260070BED0 /* ControllerRouter.swift in Sources */,
-				EA2318701FE42DDC0078564F /* ViewControllerFactory.swift in Sources */,
+				EA2318701FE42DDC0078564F /* ControllerFactory.swift in Sources */,
 				245F7C031FDC46D500F319E1 /* RemindersViewController.swift in Sources */,
 				24F90F181FED453F0070BED0 /* RemindersRouter.swift in Sources */,
 				24F90F1C1FED480C0070BED0 /* ControllerRouterFactory.swift in Sources */,
-				EA2318721FE42DEA0078564F /* AddReminderViewControllerFactory.swift in Sources */,
+				EA2318721FE42DEA0078564F /* AddReminderControllerFactory.swift in Sources */,
 				24FE16331FDF151C00D252F6 /* ViewController.swift in Sources */,
 				245F7C011FDC46AC00F319E1 /* AppDelegate.swift in Sources */,
 				24F90F161FED441B0070BED0 /* AddReminderRouter.swift in Sources */,
