@@ -11,7 +11,7 @@ class ControllerRouterFactory {
         self.window = window
     }
 
-    func build(from route: Route) -> ViewControllerRouter {
+    func build(from route: Route) -> ControllerRouter {
         switch route {
         case .addReminder:
             return AddReminderRouter(controller: controller)

@@ -30,7 +30,7 @@
 		24CC3A0A1FDDF3EE00F9D1EF /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CC3A091FDDF3EE00F9D1EF /* AddReminderView.swift */; };
 		24F90F161FED441B0070BED0 /* AddReminderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F90F151FED441B0070BED0 /* AddReminderRouter.swift */; };
 		24F90F181FED453F0070BED0 /* RemindersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F90F171FED453F0070BED0 /* RemindersRouter.swift */; };
-		24F90F1A1FED47260070BED0 /* ViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F90F191FED47260070BED0 /* ViewControllerRouter.swift */; };
+		24F90F1A1FED47260070BED0 /* ControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F90F191FED47260070BED0 /* ControllerRouter.swift */; };
 		24F90F1C1FED480C0070BED0 /* ControllerRouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F90F1B1FED480C0070BED0 /* ControllerRouterFactory.swift */; };
 		24FE16221FDF03F300D252F6 /* SpyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE161E1FDF03F300D252F6 /* SpyRouter.swift */; };
 		24FE16231FDF03F300D252F6 /* MockRemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE161F1FDF03F300D252F6 /* MockRemindersRepository.swift */; };
@@ -132,7 +132,7 @@
 		24CC3A091FDDF3EE00F9D1EF /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
 		24F90F151FED441B0070BED0 /* AddReminderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderRouter.swift; sourceTree = "<group>"; };
 		24F90F171FED453F0070BED0 /* RemindersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersRouter.swift; sourceTree = "<group>"; };
-		24F90F191FED47260070BED0 /* ViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRouter.swift; sourceTree = "<group>"; };
+		24F90F191FED47260070BED0 /* ControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerRouter.swift; sourceTree = "<group>"; };
 		24F90F1B1FED480C0070BED0 /* ControllerRouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerRouterFactory.swift; sourceTree = "<group>"; };
 		24FE161E1FDF03F300D252F6 /* SpyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyRouter.swift; sourceTree = "<group>"; };
 		24FE161F1FDF03F300D252F6 /* MockRemindersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRemindersRepository.swift; sourceTree = "<group>"; };
@@ -424,7 +424,7 @@
 			children = (
 				24089DB51FDDB7D100BC4294 /* AppRouter.swift */,
 				24F90F1B1FED480C0070BED0 /* ControllerRouterFactory.swift */,
-				24F90F191FED47260070BED0 /* ViewControllerRouter.swift */,
+				24F90F191FED47260070BED0 /* ControllerRouter.swift */,
 				24F90F171FED453F0070BED0 /* RemindersRouter.swift */,
 				24F90F151FED441B0070BED0 /* AddReminderRouter.swift */,
 				24FE163C1FDF183D00D252F6 /* Window */,
@@ -721,7 +721,7 @@
 				24FE16311FDF150200D252F6 /* Window.swift in Sources */,
 				24089DD01FDDDEFF00BC4294 /* ControllerFactory.swift in Sources */,
 				24089DB61FDDB7D100BC4294 /* AppRouter.swift in Sources */,
-				24F90F1A1FED47260070BED0 /* ViewControllerRouter.swift in Sources */,
+				24F90F1A1FED47260070BED0 /* ControllerRouter.swift in Sources */,
 				EA2318701FE42DDC0078564F /* ViewControllerFactory.swift in Sources */,
 				245F7C031FDC46D500F319E1 /* RemindersViewController.swift in Sources */,
 				24F90F181FED453F0070BED0 /* RemindersRouter.swift in Sources */,
