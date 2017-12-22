@@ -3,7 +3,8 @@ import RemindersCore
 class AppRouter: Router {
 
     private var controller: ViewController?
-    private var window: Window?
+
+    private let window: Window
     private let controllerFactory: ControllerFactory
 
     init(window: Window, controllerFactory: ControllerFactory) {
@@ -17,15 +18,9 @@ class AppRouter: Router {
 
         switch route {
         case .addReminder:
-            controller?.present(controllerToPresent)
-            controller = controllerToPresent
+            controller = AddReminderRouter(controller: controller).route(to: controllerToPresent)
         case .reminders:
-            if window?.rootView != nil {
-                controller?.dismiss()
-            } else {
-                window?.rootView = controllerToPresent
-            }
-            controller = window?.rootView
+            controller = RemindersRouter(controller: controller, window: window).route(to: controllerToPresent)
         }
     }
 }
