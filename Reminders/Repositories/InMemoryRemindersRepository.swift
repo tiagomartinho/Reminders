@@ -2,13 +2,13 @@ import RemindersCore
 
 class InMemoryRemindersRepository: RemindersRepository {
 
-    private static var reminders = [Reminder]()
+    private var reminders = [Reminder]()
 
     func save(_ reminder: Reminder) {
-        InMemoryRemindersRepository.reminders.append(reminder)
+        reminders.append(reminder)
     }
 
     func load() -> [Reminder] {
-        return InMemoryRemindersRepository.reminders
+        return reminders
     }
 }
