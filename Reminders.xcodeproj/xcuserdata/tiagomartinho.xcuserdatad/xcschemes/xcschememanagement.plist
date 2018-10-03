@@ -4,15 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Core.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Reminders.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>RemindersCore.xcscheme</key>
+		<key>Reminders.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -32,7 +37,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>245F7C0A1FDC4F7C00F319E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>245F7C121FDC4F7C00F319E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB5273DE1FDEC029005629B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
