@@ -6,14 +6,10 @@ An iOS application written in Swift to demonstrate how to implement a Clean Arch
 
 The idea is to implement the simplest To-Do List app. The user can add a Reminder with a Title and visualize the existing Reminders in a list.
 
-## CI Status
-
-[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5a2ecd23fa115200016a72b8&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5a2ecd23fa115200016a72b8/build/latest?branch=master)
-
 ## Requirements
 
-* macOS 10.13 or higher
-* Xcode 9.2 or higher
+* macOS 10.14 or higher
+* Xcode 10 or higher
 
 ## Installation
 
