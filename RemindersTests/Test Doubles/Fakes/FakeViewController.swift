@@ -7,12 +7,12 @@ class FakeViewController: ViewController {
 
     var presentedView: ViewController?
 
-    let id: String
+    let identifier: String
 
-    init(id: String) {
-        self.id = id
+    init(identifier: String) {
+        self.identifier = identifier
     }
-    
+
     func present(_ viewControllerToPresent: ViewController) {
         presented = true
         presentedView = viewControllerToPresent

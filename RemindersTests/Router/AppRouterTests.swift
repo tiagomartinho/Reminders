@@ -11,8 +11,8 @@ class AppRouterTests: XCTestCase {
     override func setUp() {
         super.setUp()
         window = FakeWindow()
-        addReminderController = FakeViewController(id: "Add Reminder")
-        reminderController = FakeViewController(id: "Reminders")
+        addReminderController = FakeViewController(identifier: "Add Reminder")
+        reminderController = FakeViewController(identifier: "Reminders")
         let controllerFactory = MockControllerFactory(addReminderController: addReminderController,
                                                       reminderController: reminderController)
         appRouter = AppRouter(window: window,
@@ -23,7 +23,7 @@ class AppRouterTests: XCTestCase {
         appRouter.route(to: .reminders)
 
         let rootView = window.rootView as? FakeViewController
-        XCTAssertEqual(rootView?.id, "Reminders")
+        XCTAssertEqual(rootView?.identifier, "Reminders")
     }
 
     func testRouteToAddReminderFromRemindersPresentView() {
@@ -32,7 +32,7 @@ class AppRouterTests: XCTestCase {
 
         XCTAssertTrue(reminderController.presented)
         let presentedView = window.rootView?.presentedView as? FakeViewController
-        XCTAssertEqual(presentedView?.id, "Add Reminder")
+        XCTAssertEqual(presentedView?.identifier, "Add Reminder")
     }
 
     func testRouteToRemindersFromAddDismissView() {
@@ -42,6 +42,6 @@ class AppRouterTests: XCTestCase {
 
         XCTAssertTrue(addReminderController.dismissed)
         let rootView = window.rootView as? FakeViewController
-        XCTAssertEqual(rootView?.id, "Reminders")
+        XCTAssertEqual(rootView?.identifier, "Reminders")
     }
 }

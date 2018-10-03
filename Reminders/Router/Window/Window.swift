@@ -1,3 +1,3 @@
 protocol Window: class {
-    var rootView: ViewController? { get set}
+    var rootView: ViewController? { get set }
 }

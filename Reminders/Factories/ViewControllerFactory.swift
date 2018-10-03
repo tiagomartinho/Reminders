@@ -9,10 +9,10 @@ class ViewControllerFactory {
         switch route {
         case .addReminder:
             return AddReminderControllerFactory(router: router,
-                                                    repository: repository).build()
+                                                repository: repository).build()
         case .reminders:
             return RemindersControllerFactory(router: router,
-                                                  repository: repository).build()
+                                              repository: repository).build()
         }
     }
 }

@@ -20,4 +20,3 @@ class RemindersRouter: ControllerRouter {
         return window.rootView!
     }
 }
-

@@ -5,7 +5,7 @@ extension UIViewController: ViewController {
     var presentedView: ViewController? {
         return presentedViewController
     }
-    
+
     func dismiss() {
         dismiss(animated: true, completion: nil)
     }
