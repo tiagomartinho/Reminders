@@ -13,7 +13,7 @@ class ControllerRouterFactory {
     func build(from route: Route) -> ControllerRouter {
         switch route {
         case .addReminder:
-            return AddReminderRouter(controller: controller)
+            return AddReminderRouter(controller: controller, window: window)
         case .reminders:
             return RemindersRouter(controller: controller, window: window)
         }

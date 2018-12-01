@@ -18,6 +18,13 @@ class AppRouterTests: XCTestCase {
                               controllerFactory: controllerFactory)
     }
 
+    func testRouteToAddReminderFromPushNotification() {
+        appRouter.route(to: .addReminder)
+
+        let rootView = window.rootView as? FakeViewController
+        XCTAssertEqual(rootView?.identifier, "Add Reminder")
+    }
+
     func testInitialRoutingSetRootView() {
         appRouter.route(to: .reminders)
 
