@@ -1,5 +1,4 @@
 public struct Reminder {
-
     public let title: String
 
     public init(title: String) {

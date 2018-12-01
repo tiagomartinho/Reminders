@@ -2,7 +2,6 @@
 @testable import RemindersCore
 
 class MockControllerFactory: ViewControllerFactory {
-
     private let addReminderController: ViewController
     private let reminderController: ViewController
 

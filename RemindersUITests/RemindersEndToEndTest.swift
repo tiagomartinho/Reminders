@@ -1,7 +1,6 @@
 import XCTest
 
 class RemindersEndToEndTest: XCTestCase {
-
     let app = XCUIApplication()
 
     override func setUp() {

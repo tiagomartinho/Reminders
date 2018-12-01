@@ -2,7 +2,6 @@
 import XCTest
 
 class AddReminderPresenterTest: XCTestCase {
-
     func testSaveReminderToRepository() {
         let reminderTitle = "Read Clean Architecture"
         let reminder = Reminder(title: reminderTitle)

@@ -2,7 +2,6 @@
 import XCTest
 
 class AppRouterTests: XCTestCase {
-
     var window: Window!
     var addReminderController: FakeViewController!
     var reminderController: FakeViewController!

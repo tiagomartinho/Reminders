@@ -2,7 +2,6 @@ import RemindersCore
 import UIKit
 
 class RemindersControllerFactory: ControllerFactory {
-
     let router: Router
     let repository: RemindersRepository
 

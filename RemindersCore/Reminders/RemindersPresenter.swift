@@ -1,5 +1,4 @@
 public class RemindersPresenter {
-
     weak var view: RemindersView?
     let router: Router
     let repository: RemindersRepository

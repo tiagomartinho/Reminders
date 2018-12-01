@@ -1,7 +1,6 @@
 @testable import RemindersCore
 
 class MockRemindersRepository: RemindersRepository {
-
     private(set) var saveWasCalled = false
     private(set) var lastReminder: Reminder?
     private(set) var loadWasCalled = false

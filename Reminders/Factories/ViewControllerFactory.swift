@@ -1,7 +1,6 @@
 import RemindersCore
 
 class ViewControllerFactory {
-
     private let repository = InMemoryRemindersRepository()
 
     func build(from route: Route,

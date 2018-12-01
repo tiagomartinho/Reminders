@@ -2,7 +2,6 @@
 import XCTest
 
 class RemindersPresenterTest: XCTestCase {
-
     func testShowNoRemindersWhenNoRemindersArePresent() {
         let view = SpyRemindersView()
         let router = SpyRouter()

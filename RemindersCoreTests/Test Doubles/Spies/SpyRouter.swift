@@ -1,7 +1,6 @@
 @testable import RemindersCore
 
 class SpyRouter: Router {
-
     var routeWasCalled = false
     var lastRoute: Route?
 

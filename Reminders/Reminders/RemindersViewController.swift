@@ -2,7 +2,6 @@ import RemindersCore
 import UIKit
 
 class RemindersViewController: UIViewController {
-
     var presenter: RemindersPresenter!
 
     private var reminders: [Reminder]!
@@ -34,7 +33,6 @@ class RemindersViewController: UIViewController {
 }
 
 extension RemindersViewController: RemindersView {
-
     func showNoReminders() {
         let label = UILabel()
         label.text = "You have no reminders"
@@ -55,7 +53,6 @@ extension RemindersViewController: RemindersView {
 }
 
 extension RemindersViewController: UITableViewDataSource {
-
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return reminders.count
     }

@@ -1,7 +1,6 @@
 @testable import Reminders
 
 class FakeViewController: ViewController {
-
     private(set) var dismissed = false
     private(set) var presented = false
 

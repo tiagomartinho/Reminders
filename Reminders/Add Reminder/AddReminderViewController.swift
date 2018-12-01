@@ -2,7 +2,6 @@ import RemindersCore
 import UIKit
 
 class AddReminderViewController: UIViewController {
-
     var presenter: AddReminderPresenter!
 
     private var titleTextField: UITextField!

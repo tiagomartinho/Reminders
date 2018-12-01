@@ -1,7 +1,6 @@
 import UIKit
 
 extension UIViewController: ViewController {
-
     var presentedView: ViewController? {
         return presentedViewController
     }
